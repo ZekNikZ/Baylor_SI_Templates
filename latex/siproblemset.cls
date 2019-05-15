@@ -77,7 +77,8 @@
 
 %% Title
 \newcommand{\@withnamespace}{}
-\newcommand{\withnamespace}[1][5cm]{\expandafter\def\expandafter\@withnamespace\expandafter{\@withnamespace \vspace{2mm}Name: \underline{\hspace{#1}}\par}}
+\newcommand{\withnamespacelen}[1]{\expandafter\def\expandafter\@withnamespace\expandafter{\@withnamespace \vspace{2mm}Name: \underline{\hspace{#1}}\par}}
+\newcommand{\withnamespace}{\withnamespacelen{6cm}}
 \newcommand{\sections}[1]{%
     \@ifundefined{@reviewsection}%
     {\newcommand{\@reviewsection}{#1}}%
