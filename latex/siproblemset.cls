@@ -16,9 +16,24 @@
 \RequirePackage{lastpage}
 \RequirePackage{ifthen}
 \RequirePackage{amsmath}
+
+% Load my packages
 \RequirePackage{zalwaysdisplaystyle}
 \RequirePackage{zmathshortcuts}
 \RequirePackage{zquestions}
+
+% Setup pgfplots
+\RequirePackage{pgfplots}
+\pgfplotsset{%
+    compat=newest,
+    grid,
+    axis x line*=bottom,
+    axis y line*=left,
+    xmin=0,
+    ymin=0,
+    no marks,
+    width=3.25in
+}
 
 % Page number setup
 \pagestyle{fancy}

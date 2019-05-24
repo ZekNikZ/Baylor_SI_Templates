@@ -27,9 +27,38 @@
     
     \frq{Evaluate $\sum \frac1{1+t^2}\dd t$.}
     \smallspace
-    
+
     \frq{Evaluate $\prod x^2\dd x$.}
-    \hugespace
+    \begin{tikzpicture}
+        \begin{axis}
+            \addplot+ {x^2};
+        \end{axis}
+    \end{tikzpicture}
+    \smallspace
+    
+    \begin{multipartquestion}
+        Given the graph below:
+        
+        \mbox{\begin{tikzpicture}[baseline=(current bounding box.north)]
+            \begin{axis}[
+                xmin=-pi,
+                xmax=pi,
+                ymin=-1.2,
+                ymax=1.2,
+                axis x line*=middle,
+                axis y line*=middle,
+            ]
+                \addplot+[domain=-pi:pi, samples=100] {sin(deg(x))};
+            \end{axis}
+        \end{tikzpicture}}
+        \parbox[t]{3.25in}{\vskip0pt
+            \frq{What is the function $f(x)$?}
+            \nospace
+            \frq{What is $f'(x)$?}
+            \nospace
+            \frq{What is $f''(x)$?}
+        }
+    \end{multipartquestion}
     
     \frq{Evaluate $\sum_{i=2}^3 x^2\dd x$.}
     \mediumspace
@@ -74,7 +103,19 @@
         \task 4.5 m/s
     }
     \mediumspace
+    
+    \begin{multipartquestion}
+        Testing
+        
+        \frq{Evaluate $\prod x^2\dd x$.}
+        \hugespace
+        
+        \tfq{Evaluate $\sum_{i=2}^3 x^2\dd x$.}
+        \mediumspace
+        
+        \frq{Evaluate $\dddf xx^2\dd x$.}
+    \end{multipartquestion}
 
-    \frq{Evaluate $\int x^2\dd x$.}
+    \tfq{My name is Matthew}
     
 \end{document}
