@@ -1,0 +1,91 @@
+\documentclass{siproblemset}
+
+
+% SI Session Information
+\course{MTH 1321}       % the course of your SI
+\sessionnum{20}         % (optional) specify the session number
+\sessiondate{11/13/19}   % the date of the session
+
+\warmup{Concept Review}
+\topic{Approximating Area}
+\topic{Definite Integrals}
+\cooldown{Review}
+
+% Worksheet Information
+\title{Approximating Area \linebreak Under a Curve and \linebreak Definite Integrals}
+\sections{Sections 5.1-5.2}
+\withnamespace
+
+\begin{document}
+    \maketitle
+    
+    \activity{Warmup}{Concept Review}{Work \textbf{alone} to answer these questions. Try not to use your notes.}{10 minutes}
+    
+    \mcq{Draw pictures of what each of the following would look like on a graph:}{
+        \task left-endpoint approximation ($L_n$)
+        \task midpoint approximation ($M_n$)
+        \task right-endpoint approximation ($R_n$)
+    }
+    \Normalsp
+    \frq{The area under a velocity vs. time graph gives \underline{\hspace{2in}}.}
+    \frq{The area under an acceleration vs. time graph gives \underline{\hspace{2in}}.}
+    
+    \mcq{Define the following terms:}{
+        \task Partition
+        \tinysp
+        \task Sample Point
+        \tinysp
+        \task Definite Integral
+        \tinysp
+        \task Riemann Sum
+        \tinysp
+    }
+\newpage
+    \mcq[3]{Label each of the following parts in the integral below.}{
+        \task Integrand
+        \task Limits of integration
+        \task Variable of integration
+    }
+    $$\int_{-2}^3x^2\text{d}x$$
+    \smallsp
+    
+    \activity{Activity 1}{Approximating Area Under a Curve}{Make a \textbf{group of two or three, all with the same colored worksheets}, to work together to do your assigned parts. Then, try to do the other parts. Try not to use your notes. \textbf{DO NOT use a calculator}.}{30 minutes}
+    
+    \frq{Approximate the area under the function $f(x)=20-3x$ on $[2,6]$ using 2 and 4 rectangles using left-endpoint or right-endpoint approximations. Then, find the actual area $A$ using geometry.}
+    \newpage
+
+    \activity{Activity 2}{Approximations with Unequal Partitions}{Make a \textbf{group of two or three, all with different colored worksheets}, to answer your assigned question. Then, try to answer the other questions. Try not to use your notes. \textbf{DO NOT use a calculator}.}{30 minutes}
+    
+    \frq{Compute an approximation of the Riemann sum to estimate the distance traveled over $[0,3]$ if the velocity at half-second intervals is as follows:}
+    \begin{center}
+        \begin{tabular}{|l|c c c c c c c|}
+            \hline
+            $t$ (s) & 0 & 0.5 & 1 & 1.5 & 2 & 2.5 & 3\\
+            \hline
+            $v$ (m/s) & 0 & 12 & 18 & 25 & 20 & 14 & 20\\
+            \hline
+        \end{tabular}
+    \end{center}
+    \newpage  
+
+    \activity{Activity 3}{Properties of Definite Integrals}{Make a \textbf{group of two or three, all with the same colored worksheets}, to work together to do your assigned parts. Then, try to do the other parts. Try not to use your notes. \textbf{DO NOT use a calculator}.}{30 minutes}
+    
+    \begin{align*}
+        \int_1^3f(x)\text{d}x=3~~~\int_2^3f(x)\text{d}x=4~~~\int_2^5f(x)\text{d}x=-2\\
+        \int_{-1}^2g(x)\text{d}x=8~~~\int_2^3g(x)\text{d}x=-1~~~\int_2^3h(x)\text{d}x=5
+    \end{align*}
+    
+    \mcq{Compute the following definite integrals using the above information}{
+        \task $\int_3^3f(x)\text{d}x$
+        \tinysp
+        \task $\int_3^{-1}g(x)\text{d}x$
+        \tinysp
+        \task $\int_1^52f(x)\text{d}x$
+        \tinysp
+    }
+
+    
+    \activity{Cooldown}{Review}{Work \textbf{alone} to answer these questions. Try not to use your notes.}{15 minutes}
+        
+    \frq{Compute $\int_{-3}^3\sqrt{9-x^2}\text{d}x$, interpreting the integral as signed area.}
+\end{document}

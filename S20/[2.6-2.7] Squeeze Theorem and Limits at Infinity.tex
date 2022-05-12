@@ -1,0 +1,80 @@
+\documentclass{siproblemset}
+
+% SI Session Information
+\course{MTH 1321}       % the course of your SI
+\sessionnum{5}          % (optional) specify the session number
+\sessiondate{1/30/19}   % the date of the session
+
+% Topics Covered Box (optional)
+\warmup{Concept Review}
+\topic{Squeeze Theorem}
+\topic{Trig Limits}
+\topic{Limits at Infinity}
+
+% Worksheet Information
+\title{Squeeze Theorem,\linebreak Trig Limits, Limits at Infinity}   % title of worksheet
+\sections{Sections 2.6 and 2.7}               % (optional) book chapters/sections
+\withnamespace                                % (optional) adds the 'Name: ____' section
+
+\begin{document}
+    % Make the title, session info header, topics covered box, and name space
+    \maketitle
+    
+    %% Warmup
+    \activity{Warmup}{Concept Review}{Work with a \textbf{partner} to answer these questions. Try not to use your notes.}{15 minutes}
+    
+    \frq{What is the Squeeze Theorem?}
+    \Tinysp
+    
+    \begin{multipartquestion}
+        \begin{multicols}{2}
+            \frq{$\lim\limits_{x\to0}\dfrac{\sin x}{x}$}
+            \frq{$\lim\limits_{x\to0}\dfrac{1-\cos x}{x}$}
+        \end{multicols}
+    \end{multipartquestion}
+    \tinysp
+    
+    \mcq[2]{Find $\lim\limits_{x\to-\infty}f(x)$ and $\lim\limits_{x\to\infty}f(x)$:}{
+        \task $f(x)=e^x$
+        \tinysp
+        \task $f(x)=\dfrac1x$
+        \tinysp
+        \task $f(x)=x^n$ ($x$ is a positive, even integer)
+        \tinysp
+        \task $f(x)=x^n$ ($x$ is a positive, odd integer)
+    }
+
+    \begin{multipartquestion}
+        \frq{How many horizontal asymptotes can a function have?}
+        \tinysp
+        \frq{How many vertical asymptotes can a function have?}
+    \end{multipartquestion}
+    \pagebreak
+   
+    \activity{Activity 1}{Squeeze Theorem}{Create \textbf{groups of two or three} to answer the following questions. Try not to use your notes.}{15 minutes}
+    
+    \frq{Evaluate the following limit: $\lim\limits_{x\to0}x^2e^{\sin x}$.}
+    \Smallsp
+    
+    \mcq{State whether the inequality provides sufficient information to determine $\lim\limits_{x\rightarrow2}f(x)$. If so, find the limit. If not, state why.}{
+        \task $x^2\leq f(x)\leq x^3-3x+3$
+        \smallsp
+        \task $e^{2-x}\leq f(x) \leq\log(8x-6)$
+        \smallsp
+    }
+
+    \pagebreak
+
+    \activity{Activity 2}{Trig Limits and Limits at Infinity}{Create \textbf{groups of two or three} to answer the following questions. Try not to use your notes.}{15 minutes}
+    \frq{Evaluate the limit $\lim\limits_{\theta\rightarrow0}\dfrac{\sin5\theta}{\sin4\theta}$}
+    \Smallsp
+    \frq{Evaluate the limit $\lim\limits_{t\rightarrow0}\dfrac{\sin(2t)-2\sin t}{t^2}$ (Hint: remember that $2\sin\theta\cos\theta=\sin2\theta$)}
+    \Smallsp
+    \frq{Evaluate the limit $\lim\limits_{r\rightarrow\infty}\dfrac{9r^2}{6-r^8}$}
+    \Smallsp
+    \frq{Find the horizontal asymptotes, if any of $f(x)=\dfrac{10}{1+3^{-x}}$}
+    \Smallsp
+
+\end{document}
+
+% References

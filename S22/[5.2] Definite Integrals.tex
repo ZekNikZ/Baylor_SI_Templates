@@ -1,0 +1,97 @@
+\documentclass{siproblemset}
+
+% SI Session Information
+\course{MTH 1321}       % the course of your SI
+\sessionnum{21}         % (optional) specify the session number
+\sessiondate{4/14/22}   % the date of the session
+
+\warmup{Key Terms Review}
+\topic{Properties of Definite Integrals}
+\topic{Introduction to the Antiderivative}
+\cooldown{Interpretations of the Integral}
+
+% Worksheet Information
+\title{Definite Integrals}
+\sections{Sections 5.2}
+\withnamespace
+
+\newcommand{\dx}{\text{d}x}
+
+\begin{document}
+    \maketitle
+    
+    \activity{Warmup}{Key Terms Review}{Work \textbf{alone} to answer these questions. Try not to use your notes.}{5 minutes}
+    
+    \mcq[3]{Label each of the following parts in the integral below.}{
+        \task Integrand
+        \task Limits of Integration
+        \task Variable of Integration
+    }
+    \begin{center}
+        \scalebox{1.5}{$\int_{-2}^{3}~x^2\text~{d}x$}
+    \end{center}
+    \smallsp
+
+    \mcq{Complete the following definite integral properties.}{
+        \task $\int_{a}^{b}cf(x)\dx=$
+        \tinysp
+        \task $\int_{a}^{b}f(x)\pm g(x)\dx=$
+        \tinysp
+        \task $\int_{a}^{b}f(x)\dx + \int_{b}^{c}f(x)\dx =$
+        \tinysp
+        \task $-\int_{a}^{b}f(x)\dx =$
+        \tinysp
+    }
+
+    \textbf{Note: these formulas will be used in the cooldown.}
+    \begin{multicols}{2}
+        $$\int_{0}^{b}x\dx=\dfrac{1}{2}b^2$$
+        
+        $$\int_{0}^{b}x^2\dx=\dfrac{1}{3}b^3$$
+    \end{multicols}
+
+    \newpage
+   
+    \activity{Activity 1}{Properties of Definite Integrals}{Make a \textbf{group of two or three, all with the same colored worksheets}, to work together to answer these questions. Try not to use your notes. \textbf{DO NOT use a calculator}.}{15 minutes}
+    \begin{center}
+        \begin{tabular}{c c c}
+            $\int_{1}^{3}f(x)\text{d}x=3$ & 
+            $\int_{2}^{3}f(x)\text{d}x=4$ & 
+            $\int_{2}^{5}f(x)\text{d}x=-2$\\
+            $\int_{-1}^{2}g(x)\text{d}x=8$ & 
+            $\int_{2}^{3}g(x)\text{d}x=-1$ & 
+            $\int_{2}^{3}h(x)\text{d}x=5$\\
+        \end{tabular}
+    \end{center}
+    \mcq{Compute the following definite integrals using the above information.}{
+        \task $\int_{3}^{3}f(x)\dx$
+        \tinysp
+        \task $\int_{3}^{-1}g(x)\dx$
+        \smallsp
+        \task $\int_{1}^{5}f(x)\dx$
+        \Smallsp
+        \task $\int_{2}^{3}\frac12f(x)+2g(x)-4h(x)\dx$
+    }
+    \newpage
+    
+    \activity{Activity 2}{Interpretations of the Definite Integral}{\textbf{Work with your same groups} to answer these questions. Try not to use your notes.}{15 minutes}
+        
+    \frq{Compute $\int_{-3}^{3}\sqrt{9-x^2}~\dx$, interpreting the integral as signed area.}
+    \Normalsp
+    \frq{Compute $\int_{0}^{4}2x+5\dx$, interpreting the integral as signed area.}
+    \Normalsp
+    \frq{Find the total distance traveled from time $t=\SI{2}{\second}$ to $t=\SI{4}{\second}$ with the velocity function $v(t)=\frac12t-3~\v{}$.}
+    \newpage
+    
+    \activity{Cooldown}{Antiderivatives}{\textbf{Work with your same groups} to answer these questions. Try not to use your notes.}{10 minutes}
+    
+    \mcq{Compute the following analytically. You do \textbf{NOT} need to simplify.}{
+        \task $\int_{1}^{4}2x+3\dx$
+        \Normalsp
+        \task $\int_{0}^{3}x^2+x+1\dx$
+        \Normalsp
+        \task $\int_{-1}^{2}x^2\dx$
+        \Normalsp
+    }
+    \newpage
+\end{document}

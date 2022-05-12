@@ -1,0 +1,87 @@
+\documentclass{siproblemset}
+
+% SI Session Information
+\course{MTH 1321}       % the course of your SI
+\sessionnum{21}         % (optional) specify the session number
+\sessiondate{11/18/19}   % the date of the session
+
+\warmup{Key Terms Review}
+\topic{Properties of Definite Integrals}
+\topic{Introduction to the Antiderivative}
+\cooldown{Interpretations of the Integral}
+
+% Worksheet Information
+\title{Definite Integrals and \linebreak Introduction to Antiderivatives}
+\sections{Sections 5.2 and 5.3a}
+\withnamespace
+
+\newcommand{\dx}{\text{d}x}
+
+\begin{document}
+    \maketitle
+    
+    \activity{Warmup}{Key Terms Review}{Work \textbf{alone} to answer these questions. Try not to use your notes.}{15 minutes}
+    
+    \mcq{Define the following terms:}{
+        \task Partition
+        \Tinysp
+        \task Sample Point
+        \Tinysp
+        \task Definite Integral
+        \Tinysp
+        \task Reimann Sum
+        \Tinysp
+    }
+    \mcq[3]{Label each of the following parts in the integral below.}{
+        \task Integrand
+        \task Limits of Integration
+        \task Variable of Integration
+    }
+    \begin{center}
+        \scalebox{1.5}{$\int_{-2}^{3}~x^2\text~{d}x$}
+    \end{center}
+    \newpage
+   
+    \activity{Activity 1}{Properties of Definite Integrals}{Make a \textbf{group of two or three, all with the same colored worksheets}, to work together to answer these questions. Try not to use your notes. \textbf{DO NOT use a calculator}.}{30 minutes}
+    \begin{center}
+        \begin{tabular}{c c c}
+            $\int_{1}^{3}f(x)\text{d}x=3$ & 
+            $\int_{2}^{3}f(x)\text{d}x=4$ & 
+            $\int_{2}^{5}f(x)\text{d}x=-2$\\
+            $\int_{-1}^{2}g(x)\text{d}x=8$ & 
+            $\int_{2}^{3}g(x)\text{d}x=-1$ & 
+            $\int_{2}^{3}h(x)\text{d}x=5$\\
+        \end{tabular}
+    \end{center}
+    \mcq{Compute the following definite integrals using the above information.}{
+        \task $\int_{3}^{3}f(x)\dx$
+        \tinysp
+        \task $\int_{3}^{-1}g(x)\dx$
+        \smallsp
+        \task $\int_{1}^{5}f(x)\dx$
+        \Smallsp
+        \task $\int_{2}^{3}\frac12f(x)+2g(x)-4h(x)\dx$
+    }
+    \newpage
+    
+    \activity{Activity 2}{Antiderivatives}{Make a \textbf{group of two or three, all with the same colored worksheets}, to work together to do your assigned parts. Then, try to do the other parts. Try not to use your notes. \textbf{DO NOT use a calculator}.}{20 minutes}
+    
+    \mcq{[2.]Find the antiderivative of the following functions.}{
+        \task $F(t)=6t-3$
+        \Smallsp
+        \task $G(x)=9x-4x^2$
+        \Smallsp
+        \task $H(x)=2e^x$
+        \Smallsp
+        \task $M(u)=\cos u$
+    }
+    \newpage
+    
+    \activity{Cooldown}{Interpretations of the Integral}{\textbf{Work with your same groups} to answer these questions. Try not to use your notes.}{25 minutes}
+        
+    \frq{Compute $\int_{-3}^{3}\sqrt{9-x^2}~\dx$, interpreting the integral as signed area.}
+    \Normalsp
+    \frq{Compute $\int_{0}^{4}2x+5\dx$, interpreting the integral as signed area.}
+    \Normalsp
+    \frq{Find the total distance traveled from time $t=\SI{2}{\second}$ to $t=\SI{4}{\second}$ with the velocity function $v(t)=\frac12t-3~\v{}$.}
+\end{document}

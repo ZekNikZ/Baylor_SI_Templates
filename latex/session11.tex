@@ -1,0 +1,90 @@
+\documentclass{siproblemset}
+
+% SI Session Information
+\course{MTH 1321}       % the course of your SI
+\sessionnum{11}          % (optional) specify the session number
+\sessiondate{10/9/19}   % the date of the session
+
+\warmup{Concept Review}
+\topic{Inverse Trig Rules}
+\topic{General Exponential Rules}
+\topic{Logarithmic Rules}
+\topic{Implicit Differentiation}
+\cooldown{Derivative Rule Review}
+
+% Worksheet Information
+\title{Implicit Differentiation, \linebreak Inverse Trigonometric Rules,\linebreak Exponential and Logarithmic Rules}
+\sections{Sections 3.8 and 3.9}
+\withnamespace
+
+\begin{document}
+    \maketitle
+    \activity{Warmup}{Concept Review}{Work with a \textbf{partner} to answer these questions. Try not to use your notes.}{15 minutes}
+    
+    \mcq[2]{Find the derivatives.}{
+        \task $\dddx\left[\arcsin(x)\right]=$
+        \tinysp
+        \task $\dddx\left[\arccos(x)\right]=$
+        \task $\dddx\left[\arcsec(x)\right]=$
+        \tinysp
+        \task $\dddx\left[\arccsc(x)\right]=$
+        \task $\dddx\left[\arctan(x)\right]=$
+        \tinysp
+        \task $\dddx\left[\arccot(x)\right]=$
+        \task $\dddx\left[e^{f(x)}\right]=$
+        \tinysp
+        \task $\dddx\left[\ln(x)\right]=$
+    }
+
+    \frq{Find $\dddx[f]$ when $x^3+xy=2e^y+x$.}
+    
+    \pagebreak
+    \activity{Activity 1}{Computing Derivatives Using Derivative Rules}{Make a \textbf{group of two or three, all with the same colored worksheets,} to answer your assigned question. Try not to use your notes.}{30 minutes}
+    
+    \begin{multipartquestion} % 4 inverse trig (easy, chain, chain with input, implicit)
+        Compute the following derivatives. Do not use a calculator.
+        \frq{$\dddx\left[x\arcsin(x)\right]$}
+        \Normalsp
+        \frq{$\dddx[y]\Bigr|_{x=\frac15}$ when $y=\arccos(4x)$}
+        \Normalsp
+        \frq{$\dddx\left[\sec^{-1}(t^2-1)\right]$}
+        \newpage
+        \frq{$\dddx\left[\csc(x^2)\cot^{-1}(2x)\right]$}
+        \Normalsp
+    \end{multipartquestion}
+
+    \begin{multipartquestion} % 4 log (easy, chain, chain with input, log_a)
+        Compute the following derivatives. Do not use a calculator.
+        \frq{$\dddx\left[e^x\ln(x)\right]$}
+        \Normalsp
+        \frq{$\dddf{t}\left[\ln\paren{t5^t}\right]$}
+        \newpage
+        \frq{$\dddf{t}\left[\log_3(\sin(t))\right]$}
+        \Normalsp
+    \end{multipartquestion}
+
+    \begin{multipartquestion} % 2 exp (chain, chain with input)
+        Compute the following derivatives. Do not use a calculator.
+        \frq{$\dddx\left[2^{2^x}\right]$}
+        \Normalsp
+        \frq{$\dddx[y]\Bigr|_{x=\ln(6)}$ when $y=e^{2x}$}
+        \newpage
+    \end{multipartquestion}
+
+    \activity{Activity 2}{Implicit Differentiation}{Make a \textbf{{\em new} group of three, all with the different colored worksheets,} to answer these questions. Try not to use your notes.}{30 minutes}
+    
+    \frq{Find $\dddx[f]$ when $\tan(x^2y)=(x+y)^3$.}
+    \Largesp
+    \frq{Find $\dddf[a]{b}$ and $\dddf[b]{a}$ when $ae^b=2ab+b^3$.}
+    \newpage
+    \frq{Prove that $\dddx[y]=-\dfrac{1}{x^2(\frac12y^{-1/2}-2y)}$ when $\sqrt{y}=\dfrac1x+y^2$.}
+    \Largesp
+    \frq{Find an equation of the tangent line to the implicit equation at the point $(2,1)$.}
+    $$xy+x^2y^2=6$$
+    
+    \newpage
+    \activity{Cooldown}{Derivative Rules Review}{Alone, make a sheet of all of the derivative rules that we have learned so far. Use the back if needed. There are 8 basic rules (depending on how you count them), 4 exponential/logarithmic rules, 6 trigonometric rules, and 6 inverse trigonometric rules.}{15 minutes}
+    \thispagestyle{empty}
+    
+    
+\end{document}

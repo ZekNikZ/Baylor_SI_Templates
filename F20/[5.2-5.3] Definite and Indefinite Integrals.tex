@@ -1,0 +1,210 @@
+\documentclass{siproblemset}
+\usepackage{multicol}
+
+% SI Session Information
+\course{MTH 1321}       % the course of your SI
+\sessionnum{18}         % (optional) specify the session number
+\sessiondate{4/13/21}   % the date of the session
+
+\warmup{Concept Review}
+\topic{Reimann Sums}
+\topic{Definite Integrals}
+\topic{Antiderivatives}
+\topic{Indefinite Integrals}
+\cooldown{Review}
+
+% Worksheet Information
+\title{Reimann Sums, Definite Integrals,\linebreak Antiderivatives, and Indefinite \linebreak Integrals}
+\sections{Section 5.2-5.3}
+\withnamespace
+
+\begin{document}
+    \maketitle
+    
+    \activity{Warmup}{Concept Review}{Try these problems \textbf{alone} as your peers join the session. Do your best to not refer to your notes.}{10 minutes}
+    
+    \mcq{Define the following terms:}{
+        \task Partition
+        \tinysp
+        \task Sample Point
+        \tinysp
+        \task Riemann Sum
+        \tinysp
+        \task Definite Integral
+        \tinysp
+    }
+    \mcq[3]{Label each of the following parts in the integral below.}{
+        \task Integrand
+        \task Limits of integration
+        \task Variable of integration
+    }
+    $$\int_{-2}^3x^2\text{d}x$$
+ 
+    \mcq{Define the following terms:}{
+        \task Antiderivative
+        \Tinysp
+        \task Indefinite integral
+        \Tinysp
+    }
+    
+    \frq{What is the difference between an antiderivative and the indefinite integral?}
+    % General antider. +C, its a SET of ALL antiderivativesee
+
+%    \mcq[2]{Give the following indefinite integrals:}{
+%        \task $\int x^n\text{d}x$
+%        \tinysp
+%        \task $\int \frac{\text{d}x}{x}$
+%        \tinysp
+%        \task $\int e^{kx}\text{d}x$
+%        \tinysp
+%        \task $\int \sin(kx)\text{d}x$
+%        \tinysp
+%        \task $\int \cos(kx)\text{d}x$
+%        \tinysp
+%        \task $\int \sec^2(kx)\text{d}x$
+%        \tinysp
+%    }
+
+    \activity{Activity 1}{Properties of Definite Integrals}{Work together in your \textbf{breakout rooms} to answer these questions. Do your best to not refer to your notes while working on these problems.}{15 minutes}
+    
+    \begin{align*}
+        \int_1^3f(x)\text{d}x=3~~~\int_2^3f(x)\text{d}x=4~~~\int_2^5f(x)\text{d}x=-2\\
+        \int_{-1}^2g(x)\text{d}x=8~~~\int_2^3g(x)\text{d}x=-1~~~\int_2^3h(x)\text{d}x=5
+    \end{align*}
+    
+    \mcq{Compute the following definite integrals using the above information}{
+        \task $\int_3^3f(x)~\text{d}x$
+        \tinysp
+        \task $\int_3^{-1}g(x)~\text{d}x$
+        \tinysp
+        \task $\int_1^52f(x)~\text{d}x$
+        \smallsp
+        \task $\int_2^3f(x)+h(x)~\text dx$
+        \tinysp
+    }
+    
+    \frq{Compute $\int_{-2}^3x~\text{d}x$, interpreting the integral as signed area.}
+
+    \newpage
+    
+    \activity{Activity 2}{Antiderivatives and Indefinite Integrals}{Work together in your \textbf{breakout rooms} to answer these questions. Do your best to not refer to your notes while working on these problems.}{10 minutes}
+    
+    \mcq[2]{Find an antiderivative of the following functions.}{
+        \task $F(t)=6t-3$
+        \Normalsp
+        \task $G(x)=9x-4x^2$
+        \Normalsp
+        \task $H(x)=2e^x$
+        \Normalsp
+        \task $M(u)=\cos(u)$
+        \Normalsp
+        \task $A(t)=\dfrac13\sin(x)-\dfrac14\cos(x)$
+        \Normalsp
+        \task $K(s)=\dfrac{1}{\sqrt[3]{x}}$
+        \Normalsp
+    }
+    \newpage
+
+    \activity{Activity 3}{Indefinite Integrals}{Work together in your \textbf{breakout rooms} to answer these questions. Do your best to not refer to your notes while working on these problems.}{10 minutes}
+    
+    \mcq[2]{Compute the following indefinite integrals. Make sure to use exponential and trigonometric properties when necessary to simplify the integrand before integrating.}{
+        \task $\int\dfrac{4}{x}-e^x\text{d}x$
+        \Normalsp
+        \task $\int18t^5-10t^4-28t\text{d}t$
+        \Normalsp
+        \task $\int5x-3e^{3-4x}\text{d}x$
+        \Normalsp
+        \task $\int t^{-7/13}\text{d}t$
+        \Normalsp
+        \task $\int(1+\sec(\theta))\cos(\theta)\text{d}\theta$
+        \Normalsp
+        \task $\int\frac{3\text{d}x}{5x}$
+        \Normalsp
+    }
+
+    \activity{Cooldown}{Reimann Sums}{Try this problem \textbf{alone}. Do your best to not refer to your notes.}{30 minutes}
+    \frq{Compute an approximation of the Riemann sum to estimate the distance traveled over $[0,3]$ if the velocity at half-second intervals is as follows:}
+    \begin{center}
+        \begin{tabular}{|l|c c c c c c c|}
+            \hline
+            $t$ (s) & 0 & 0.5 & 1 & 1.5 & 2 & 2.5 & 3\\
+            \hline
+            $v$ (m/s) & 0 & 12 & 18 & 25 & 20 & 14 & 20\\
+            \hline
+        \end{tabular}
+    \end{center}
+    \newpage  
+
+    \newpage
+    
+    \thispagestyle{empty}
+    \begin{center}
+        \textbf{\underline{Definition of the Definite Integral}}
+    \end{center}
+    $$\int_a^bf(x)\text{d}x=\lim\limits_{\left\lVert P \right\rVert\to 0}R(f,P,C)=\lim\limits_{\left\lVert P \right\rVert\to 0}\sum_{i=1}^{N}\Delta x_if(c_i)\equiv\text{``signed area under $f$ from $x=a$ to $x=b$''}$$
+    
+    \thispagestyle{empty}
+    \begin{center}
+        \textbf{\underline{Properties of Definite Integrals}}
+    \end{center}
+    \begin{multicols}{2}
+        \begin{enumerate}
+            \item Reversing the limits of integration
+            $$\int_a^bf(x)~\text{d}x=-\int_b^af(x)~\text{d}x$$
+            \item Zero-width interval
+            $$\int_c^cf(x)~\text{d}x=0$$
+            \item Constant multiple
+            $$\int_a^bcf(x)~\text{d}x=c\int_a^bf(x)~\text{d}x$$
+            \item Sum and difference rules
+            $$\int_a^bf(x)~\text{d}x~\pm\int_a^bg(x)~\text{d}x=\int_a^b\paren{f(x)\pm g(x)}~\text{d}x$$
+            \item Additivity of limits
+            $$\int_a^bf(x)~\text{d}x+\int_b^cf(x)~\text{d}x=\int_a^cf(x)~\text{d}x$$
+        \end{enumerate}
+    \end{multicols}
+
+    \thispagestyle{empty}
+    \begin{center}
+        \textbf{\underline{Definition of the Indefinite Integral}}
+    \end{center}
+    If $F(x)$ is \textit{an} antiderivative of $f(x)$ (i.e., $F(x)$ answers the question ``whose derivative am I?''), then
+    $$\int f(x)\text{d}x=F(x)+C\equiv\text{``the \textit{general} antiderivative of $f$''}$$
+
+    \thispagestyle{empty}
+    \begin{center}
+        \textbf{\underline{Properties of Indefinite Integrals}}
+    \end{center}
+    \begin{multicols}{2}
+        \begin{enumerate}
+            \item Constant multiple
+            $$\int cf(x)~\text{d}x=c\int f(x)~\text{d}x$$
+            \item Sum and difference rules
+            $$\int f(x)~\text{d}x~\pm\int g(x)~\text{d}x=\int \paren{f(x)\pm g(x)}~\text{d}x$$
+        \end{enumerate}
+    \end{multicols}
+
+    \thispagestyle{empty}
+    \begin{center}
+    \textbf{\underline{Common Indefinite Integrals}}
+    \end{center}
+    \begin{multicols}{2}
+        \begin{enumerate}
+            \item Constant rule
+            $$\int k\text{d}x=kx+C$$
+            \item ``Reverse'' power rule
+            $$\int x^n\text{d}x=\dfrac{1}{n+1}x^{n+1}+C ~~~ (n\neq-1)$$
+            \item Antiderivatives for natural logarithms
+            $$\int \dfrac{\text{d}x}{x}=\int \dfrac{1}{x}\text{d}x=\ln\abs{x}+C$$
+            \item Antiderivatives of general exponentials
+            $$\int e^{x}\text{d}x=e^{x}+C$$
+            $$\int e^{kx}\text{d}x=\dfrac1ke^{kx}+C$$
+            \item Antiderivatives of trigonometric functions
+            
+            $$\int \sin(x)\text{d}x=-\cos(x)+C$$
+            $$\int \cos(x)\text{d}x=\sin(x)+C$$
+            $$\int \sec^2(x)\text{d}x=\tan(x)+C$$
+            $$\int \csc^2(x)\text{d}x=-\cot(x)+C$$
+            $$\int \sec(x)\tan(x)\text{d}x=\sec(x)+C$$
+            $$\int \csc(x)\cot(x)\text{d}x=-\csc(x)+C$$
+        \end{enumerate}
+    \end{multicols}
+\end{document}

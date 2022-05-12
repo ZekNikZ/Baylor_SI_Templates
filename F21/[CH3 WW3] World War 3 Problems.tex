@@ -1,0 +1,94 @@
+\documentclass{siproblemset}
+
+% SI Session Information
+\course{MTH 1321}       % the course of your SI
+\sessionnum{9}          % (optional) specify the session number
+\sessiondate{9/29/21}   % the date of the session
+
+\warmup{Concept Review}
+\topic{Rates of Change}
+\topic{Higher Derivatives}
+\topic{Trigonometric Derivatives}
+\cooldown{Graphs of Derivatives}
+
+% Worksheet Information
+\title{Rates of Change, Trig.\linebreak and Higher Derivatives}
+\sections{Sections 3.4 and 3.5}
+\withnamespace
+
+\begin{document}   
+    % Limit Definition 
+    \frq{Use the limit definition of the derivative to compute $f'(2)$ when $f(x)=x^2+2$.}
+    \tinysp
+    \frq{Use the limit definition of the derivative to compute $f'(x)$ when $f(x)=\sqrt{x+3}$.}
+    \tinysp
+    \frq{Use the limit definition of the derivative to compute $f'(2)$ when $f(x)=\dfrac{1}{x}$.}
+    \tinysp
+    \frq{Use the limit definition of the derivative to compute $f'(x)$ when $f(x)=\sqrt{x^2-1}$.}
+    \tinysp
+    
+    % Derivative Rules
+    \frq{Compute the derivative of $y=z\csc(9z+1)$.}
+    \tinysp
+    \frq{Compute the derivative of $y=\ln\paren{t5^t}$.}
+    \tinysp
+    \frq{Compute the derivative of $f(x)=\dfrac{e^{-x}}{x}$.}
+    \tinysp
+    \frq{Compute the derivative of $h(z)=\dfrac{z}{\sqrt{1-z}}$.}
+    \tinysp
+    \frq{Compute the derivative of $y=\log_3(\sin(t))$.}
+    \tinysp
+    \frq{Compute the derivative of $g(t)=\arctan(t+\ln(t))$.}
+    \tinysp
+    \frq{Compute the derivative of $f(x)=\sin^2(4x+9)$.}
+    \tinysp
+    \frq{Compute the derivative of $y=\arccos(e^x+2)$.}
+    \tinysp
+    
+    % Rates of Change
+    \frq{What is the rate of change of the volume of a cube $V$ with respect to its side $s$ when $s=2$?}
+    \tinysp
+    \frq{What is the rate of change of $f(x)=\sqrt[3]{x}$ with respect to $x$ when $x=27$?}
+    \tinysp
+    \mcq{(You may use a calculator) A ball is thrown off the top of a building. The function modeling the height above the ground of the ball $s$ in meters with respect to time $t$ is $s(t)=-4.9t^2+15t+130$.}{
+        \task What is the height of the building?
+        \task What is the velocity of the ball after 3 seconds?
+    }
+    \tinysp
+    \mcq{(You may use a calculator) A frisbee is thrown off the top of a hill. The function modeling the height above the ground of the ball $s$ in meters with respect to time $t$ is $s(t)=-2t^2+8t+20$.}{
+        \task At what time will the frisbee hit the ground?
+        \task What is the velocity of the frisbee when it hits the ground?
+    }
+    \tinysp
+    
+    % Derivative Applications
+    \frq{Find an equation of the tangent line of $y=\arcsin(x)$ when $x=0$.}
+    \tinysp
+    \frq{Suppose the following are true: $$f(1)=\frac12~~~~f'(1)=4~~~~g(1)=\frac{1}{\sqrt{3}}~~~~g'(1)=3$$ Find $H'(1)$ where $$H(x)=\frac{1-x}{f(x)}-x^3f(x)f(x^2)-\arcsin(g(x)).$$}
+    \tinysp
+    \frq{Find an equation of the tangent line of $y=\arccot(x)$ when $x=\sqrt{3}$.}
+    \tinysp
+    \frq{Use the information given in the chart and the function $H(x)$ below to find $H'(2)$. \textbf{Simplify your answer as much as possible.}}
+    \begin{multicols}{2}
+        $$H(x)=\dfrac{g(x)}{\ln(f(x))}$$\\
+        \begin{tabular}{|c|c|c|c|c|}
+            \hline
+            $x$ & $f(x)$ & $f'(x)$ & $g(x)$ & $g'(x)$ \\
+            \hline
+            $2$ & $e^2$ & $\pi$ & $e^3$ & $1/2$\\
+            \hline
+        \end{tabular}
+    \end{multicols}
+    \tinysp
+    
+    % Implicit Differentiation
+    \frq{Given that $4x^2-y^2=9$, find $\dddx[y]$.}
+    \tinysp
+    \frq{Given that $\dfrac{1}{x}+\dfrac{1}{y}=-\dfrac{1}{12}$, find $\dddx[y]$.}
+    \tinysp
+    \frq{Given that $x^6+y^6+6x^2y^2-8=0$, find $\dddx[y]$.}
+    \tinysp
+    \frq{Given that $2x^2-3y^2=5xy$, find $\dddx[y]$ when $x=2$ and $y=-4$.}
+    \tinysp
+    
+\end{document}

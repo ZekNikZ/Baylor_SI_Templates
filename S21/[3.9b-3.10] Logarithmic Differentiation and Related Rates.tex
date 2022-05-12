@@ -1,0 +1,69 @@
+\documentclass{siproblemset}
+
+% SI Session Information
+\course{MTH 1321}       % the course of your SI
+\sessionnum{12}          % (optional) specify the session number
+\sessiondate{3/11/21}   % the date of the session
+
+\warmup{Concept Review}
+\topic{Derivatives of Exponential Functions}
+\topic{Derivatives of Logarithmic Functions}
+\topic{Related Rates}
+\cooldown{Implicit Tangent Lines}
+
+% Worksheet Information
+\title{Implicit Differentiation, and \linebreak Inverse Trigonometric Rules}
+\sections{Section 3.9b-3.10}
+\withnamespace
+
+
+\newcommand{\ftps}{\text{ft/s}}
+\newcommand{\ft}{\text{ft}}
+\usepackage{siunitx}
+
+\begin{document}
+    \maketitle
+    \activity{Warmup}{Concept Review}{Work \textbf{alone} then share your answers with a \textbf{partner}. Try not to use your notes.}{15 minutes}
+
+    \begin{multipartquestion} % 4 log (easy, chain, chain with input, log_a)
+        Compute the following derivatives. Do not use a calculator.
+        \frq{$\dddf{t}\left[\log_3(\sin(t))\right]$}
+        \Normalsp
+        \frq{$\dddx\left[2^{2^x}\right]$}
+        \Normalsp
+        \frq{$\dddx\left[x\ln(e^{3x})\right]$}
+        \Normalsp
+        \frq{$\dddx[y]\Bigr|_{x=\ln(6)}$ when $y=e^{2x}$}
+        \Largesp
+    \end{multipartquestion}
+
+    \frq{Compute the derivative of $y=x^x$ using logarithmic differentiation.}
+    \newpage
+
+    \activity{Activity 1}{Harder Derivatives}{Work in a \textbf{group of 2 or 3 people with the same color worksheet as you} to answer these questions. Try not to use your notes.}{30 minutes}
+    
+    \frq{Compute the derivative of $g(w)=(3w-7)^{4w}$.}
+    \Hugesp
+    \frq{Compute the derivative of $f(x)=(2x-e^{8x})^{\sin(2x)}$.}
+    \Hugesp
+    \frq{Compute the derivative of $v(t)=\paren{\sec\paren{2x}}^{\ln(x+x^2)}$.}
+    \Hugesp
+    \frq{Compute the derivative of $f(x)=(x^{1/2}+\ln x)^x$.}
+    \pagebreak
+    
+    \activity{Activity 2}{Related Rates}{Work together in your \textbf{breakout rooms} to answer these questions. Do your best to not refer to your notes while working on these problems.}{30 minutes}
+    
+    \frq{A $12 \ft$ ladder is resting against a wall. Unfortunately, the construction worker who put up this ladder somehow did not know the wall was slippery, so as he climbs the ladder it starts to slide to the ground. At the moment when the height of the top of the ladder is $8 \ft$, the rate at which the bottom of the ladder is moving away from the wall is 2$\ftps$. How fast is the top of the ladder falling at that moment?}
+    \Largesp
+    \frq{What is the rate of change of the volume of a cylinder with respect to its height at the moment when its radius is 2 m, if, for this particular cylinder, its height is always three times its radius?}
+    \newpage
+    \frq{Your cat Jimmy was playing on your kitchen counter when it accidentally knocks over a salt shaker. Bad Jimmy. The salt shaker pours salt over the counter at a rate of $\SI{3}{\centi\meter^3/\second}$ and collects into a cone of salt on the ground. At any point in time, the height of the cone is always equal to its diameter. What is the rate of change of the radius of the cone of salt at the moment when its height is $\SI{2}{\centi\meter}$?}
+    \Largesp
+    \frq{You are at Texas' premier hot air balloon festival. A very ugly purple and white balloon is rising at a constant speed of $\SI{5}{\meter/\second}$. If you are standing 4 km away from the lift-off point of the balloon, what is the rate of change of the angle between the ground and your line-of-sight with respect to time when the distance between you and the balloon (diagonally) is 5 km?}
+    \newpage
+    
+    \activity{Cooldown}{Implicit Tangent Lines}{Test your knowledge of previous topics by answering these questions \textbf{alone}. Try not to use your notes.}{15 minutes}
+    \frq{Find an equation of the tangent line to the implicit equation at the point $(1,2)$.}
+    $$3y^2-2x^5=10$$
+
+\end{document}

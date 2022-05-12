@@ -1,0 +1,92 @@
+\documentclass{siproblemset}
+
+\usepackage{multicol}
+\usepackage{xcolor}
+
+% SI Session Information
+\course{MTH 1321}
+\sessionnum{3}
+\sessiondate{9/9/19}
+
+\warmup{Concept Review}
+\topic{Squeeze Theorem}
+\topic{Trigonometric Limits}
+\topic{Limits at Infinity}
+\cooldown{Challenge Problems}
+
+% Worksheet Information
+\title{Squeeze Theorem, Trigonometric\linebreak Limits, Limits at Infinity}
+\sections{Sections 2.6-2.7}
+\withnamespace
+
+\begin{document}
+    \maketitle
+    
+    \activity{Warmup}{Concept Overview}{Work with a \textbf{partner} to answer these questions. Try not to use your notes.}{15 minutes}
+    
+    \frq{What is the squeeze theorem?}
+    \tinyspace
+    
+    \mcq[2]{Find the following limits.}{
+        \task $\lim\limits_{x\rightarrow0}\dfrac{\sin x}{x}$
+        \task $\lim\limits_{x\rightarrow0}\dfrac{1-\cos x}{x}$
+    }
+    
+    \frq{How many horizontal asymptotes can a function have? Vertical asymptotes?}
+    \nospace
+    
+    \frq{How do you find horizontal asymptotes?}
+    \smallspace
+    
+    \frq{How do you find vertical asymptotes?}
+    
+    \pagebreak
+    \activity{Activity 1}{Squeeze Theorem}{Make a \textbf{group of three, all with different colored worksheets,} to answer these questions. Try not to use your notes.}{30 minutes}
+    
+    \begin{multipartquestion}
+        Evaluate the following limits using the Squeeze Theorem.
+        \frq{$\lim\limits_{x\rightarrow0}\left( x\sin\left( \dfrac{1}{x}\right) \right) $}
+        \largespace
+        \frq{$\lim\limits_{x\rightarrow0}\left( x^2e^{\sin(1/x) }\right)  $}
+    \end{multipartquestion}
+\pagebreak
+
+    \mcq[3]{For the graph on the board, determine if the squeeze theorem can be applied for the following limits. If it can, show the inequality associated with the application of the theorem.}{
+        \task $\lim\limits_{x\rightarrow a}f(x)$
+        \task $\lim\limits_{x\rightarrow b}f(x)$
+        \task $\lim\limits_{x\rightarrow c}f(x)$
+    }
+\nospace
+    
+    \begin{multipartquestion}
+        State whether the inequality provides sufficient information to determine $\lim\limits_{x\rightarrow2}f(x)$. If so, find the limit. If not, state why.
+        \frq{$x^2\leq f(x)\leq x^3-3x+3$}
+        \smallspace
+        \frq{$e^{2-x}\leq f(x) \leq\log(8x-6)$}
+        \smallspace
+    \end{multipartquestion}
+
+    \activity{Activity 2}{Trigonometric Limits and Limits at Infinity}{Make a \textbf{group of three, all with the same colored worksheet,} to answer these questions. Try not to use your notes.}{30 minutes}
+    
+    \begin{multipartquestion}
+        Evaluate the following limits.
+        \frq{$\lim\limits_{t\rightarrow0}\dfrac{t}{\sin3t}$}
+        \mediumspace
+        \frq{$\lim\limits_{z\rightarrow0}\dfrac{1-\cos2z}{\sin3z}$}
+        \mediumspace
+        \frq{$\lim\limits_{y\rightarrow\infty}e^{3-y}$}
+        \mediumspace
+        \frq{$\lim\limits_{x\rightarrow-\infty}\dfrac{3x^2+4x-4}{2x+4}$}
+    \end{multipartquestion}
+\pagebreak
+
+    \frq{Find the horizontal asymptotes, if any, of the function $f(x)$:$$f(t)=\frac{e^t}{1-e^t}$$}
+    \largespace
+    
+    \activity{Cooldown}{Look Back, Look Forward}{Attempt to do these problems \textbf{alone} then discuss your answers with the people around you.}{15 minutes}
+    
+    \frq{Evaluate the limit: $\lim\limits_{x\rightarrow9}\dfrac{x-9}{\sqrt x-3}$}
+    \smallspace
+
+    \frq{Evaluate the limit: $\lim\limits_{x\rightarrow-\infty}\dfrac{7x-9}{4x+3}$}
+\end{document}

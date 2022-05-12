@@ -1,0 +1,81 @@
+\documentclass{siproblemset}
+
+% SI Session Information
+\course{MTH 1321}       % the course of your SI
+\sessionnum{17}         % (optional) specify the session number
+\sessiondate{4/8/21}   % the date of the session
+
+\warmup{Concept Review}
+\topic{Summation Notation}
+\topic{Approximating Area Under a Curve}
+\topic{Approximating Area With Unequal Partitions}
+\cooldown{Review}
+
+% Worksheet Information
+\title{Approximating Area \linebreak Under a Curve}
+\sections{Section 5.1}
+\withnamespace
+
+\begin{document}
+    \maketitle
+    
+    \activity{Warmup}{Concept Review}{Work \textbf{alone} to answer these questions. Try not to use your notes.}{10 minutes}
+    
+    \mcq{Draw pictures of what each of the following would look like on a graph:}{
+        \task left-endpoint equal-width approximation ($L_n$)
+        \task midpoint equal-width approximation ($M_n$)
+        \task right-endpoint equal-width approximation ($R_n$)
+    }
+    \Normalsp
+    \frq{The area under a velocity vs. time graph gives \underline{\hspace{2in}}.}
+    \tinysp
+    \frq{The area under an acceleration vs. time graph gives \underline{\hspace{2in}}.}
+    \tinysp
+    \frq{What does ``signed area'' refer to? Draw a picture to aid in your explanation.}
+    \tinysp
+        \newpage
+    \activity{Activity 1}{Approximating Area Under a Curve}{Make a \textbf{group of two or three, all with the same colored worksheets}, to work together to do your assigned parts. Then, try to do the other parts. Try not to use your notes. \textbf{DO NOT use a calculator}.}{30 minutes}
+    
+    \frq{Approximate the area under the function $f(x)=20-3x$ on $[2,6]$ using 2 and 4 rectangles using left-endpoint approximations. Then, compute the actual area $A$ of the region using geometry.}
+    \Hugesp
+    \smallsp
+    
+    \frq{If you have extra time, compute $\abs{A-L_4}$. This value is called the \textit{error} and is a measure of how close your approximation was. For those curious, the \textit{percent error} can be computed using the formula $\abs{\dfrac{L_4-A}{A}}\times100\%$.}
+    \newpage
+        
+    \frq{Compute $R_6$ and $M_3$ to estimate the distance traveled over $[0,3]$ if the velocity at half-second intervals is as follows:}
+    \begin{center}
+        \begin{tabular}{|l|c c c c c c c|}
+            \hline
+            $t$ (s) & 0 & 0.5 & 1 & 1.5 & 2 & 2.5 & 3\\
+            \hline
+            $v$ (m/s) & 0 & 12 & 18 & 25 & 20 & 14 & 20\\
+            \hline
+        \end{tabular}
+    \end{center}
+    \newpage
+
+    \activity{Activity 2}{Summation Notation}{Make a \textbf{group of two or three, all with the same colored worksheets}, to work together to answer these questions. Try not to use your notes. \textbf{DO NOT use a calculator}.}{15 minutes}
+    \frq{Compute $\sum_{j=3}^{5}\sin\left(j\frac\pi2\right)$.}
+    \Normalsp
+    \frq{Compute $\sum_{k=2}^{4}k^3$.}
+    \Normalsp
+    \frq{Express in summation notation: $\dfrac{1}{2\cdot3}+\dfrac{2}{3\cdot4}+\dfrac{3}{4\cdot5}+\dfrac{4}{5\cdot6}$.}
+    \newpage
+    \frq{Determine a formula for $R_n$ for the following function on the given interval:}
+    $$y=2x-3~~~~~[-1, 3]$$
+
+    \Hugesp
+    
+    \activity{Cooldown}{Review}{Work \textbf{alone} to answer these questions. Try not to use your notes.}{15 minutes}
+        
+    \frq{Which approximation strategy is best: $L_n$, $R_n$, or $M_n$?}
+    \tinysp
+    \frq{How many rectangles are needed to get the actual area?}
+    \tinysp
+    \frq{Compute $\sum_{i=0}^{5}4$.}
+    \newpage
+    \begin{center}
+        \textit{(this page intentionally left blank)}
+    \end{center}
+\end{document}

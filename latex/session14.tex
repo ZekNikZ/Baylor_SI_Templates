@@ -1,0 +1,76 @@
+\documentclass{siproblemset}
+
+% SI Session Information
+\course{MTH 1321}       % the course of your SI
+\sessionnum{14}         % (optional) specify the session number
+\sessiondate{10/23/19}   % the date of the session
+
+\warmup{Concept Review}
+\topic{Linearization}
+\topic{Extreme Values}
+\cooldown{Related Rates Review}
+
+% Worksheet Information
+\title{Linearization and Extreme Values}
+\sections{Section 4.1-4.2}
+\withnamespace
+
+\newcommand{\ftps}{\text{ft/s}}
+\newcommand{\ft}{\text{ft}}
+\usepackage{siunitx}
+
+\begin{document}
+    \maketitle
+    
+    \activity{Warmup}{Concept Review}{Do these problems \textbf{alone} then discuss your answers with a partner. Try not to use your notes.}{15 minutes}
+    
+    \frq{What is the linearization $L(x)$ of a function at $x=a$?}
+    \tinysp
+    \frq{How do we find the output change of a function? $$\Delta f\approx\hspace{4cm}$$}
+    \frq{What is the difference between local and global/absolute extrema?}
+    \Tinysp
+    \frq{What are critical values?}
+    \Tinysp
+    \frq{What is the Extreme Value Theorem?}
+    \Smallsp
+    \frq{How do we find absolute maxes and mins?}
+    \newpage
+  
+    \activity{Activity 1}{Linearization}{Make a \textbf{group of two or three, all with the same colored worksheets,} to answer your assigned question. Then, try to answer the other questions. Try not to use your notes.}{30 minutes}
+    
+    \frq{[BLUE 1.] Estimate $\Delta f=f(2.01)-f(2)$ for $f(x)=\dfrac{1}{x+2}$. Then find the linearization of $f$ that corresponds to your answer.}
+    \hugesp
+    \frq{[GREEN 2.] At a certain moment, the temperature in a room satisfies $\dddf[T]{t}=\SI{0.005}{\degreeCelsius/\second}$. Estimate the rise in temperature over the next $\SI{10}{s}$.}
+    \newpage
+    \frq{[YELLOW 3.] Approximate how much larger $3^{2.02}$ than $3^2$. Then find the linearization equation that corresponds to your answer.}
+    \hugesp
+
+    \activity{Activity 2}{Extreme Values}{Make a \textbf{group of two or three, all with different colored worksheets,} to answer your assigned question. Then, try to answer the other questions. Try not to use your notes.}{30 minutes}
+    
+    \mcq{Find the critical values of $f(x)=x^3-\frac{9}{2}x^2+6x$ on}{%
+        \task $[0, \frac32]$
+        \Smallsp
+        \task $[0, 3]$
+    }
+    \newpage
+    \mcq{Find the critical points of $f(x)=x^3-\frac{9}{2}x^2+6x$ on}{%
+        \task $[0, \frac32]$
+        \Smallsp
+        \task $[0, 3]$
+    }
+    \Smallsp
+    \mcq{Find the absolute maximum and minimum of the functions on the given intervals:}{
+        \task $f(x)=x^3-12x^2+21x-7~~~~~[-2,2]$
+        \Hugesp
+        \tinysp
+        \task $g(x)=x-\dfrac{4x}{x+1}~~~~~[0,3]$
+        \hugesp
+        \task $h(x)=\sqrt{x+x^2}-\sqrt{x}~~~~~[0,4]$\\(Hint: once you take a derivative, try to get rid of the radicals)
+    }
+    \newpage
+    
+    \activity{Cooldown}{Related Rates Review}{Do this problems \textbf{alone}.}{15 minutes}
+    
+    \frq{You are bored from your studying and you find a laser pointer. Naturally, you turn it on and point it at the wall 8 m across the room to entertain yourself (and your cat Jimmy). You rotate the laser in your hand at a rate of $\frac{\pi}{9}$ rad/s. Let $\theta$ be the angle between the beam and the direct line between you and the wall (perpendicular to the wall). How fast is the dot moving when $\theta=\frac{\pi}{6}$ rad?}
+    
+\end{document}

@@ -1,0 +1,94 @@
+\documentclass{siproblemset}
+
+\usepackage{multicol}
+\usepackage{amsmath}
+
+% SI Session Information
+\course{MTH 1321}
+\sessionnum{3}
+\sessiondate{1/27/22}
+
+\warmup{Concept Review}
+\topic{Limit Laws}
+\topic{Determining Continuity}
+\cooldown{Challenge Problems}
+
+% Worksheet Information
+\title{Limit Laws}
+\sections{Sections 2.3}
+\withnamespace
+
+\begin{document}
+    \maketitle
+    
+    \activity{Warmup}{Concept Review}{Work \textbf{alone} then share your answers with a \textbf{partner}. Try not to use your notes.}{15 minutes}
+    
+    \frq{What are the basic limit laws?}
+    \begin{center}
+        \begin{tabular}{ |c|c|c| } 
+            \hline
+            \multicolumn{3}{|c|}{If $\lim\limits_{x\to c}f(x)=L$ and $\lim\limits_{x\to c}g(x)=M$ exist, then:}\\[4ex]
+            \hline
+            \textbf{Law Name} & \textbf{Law Definition} & \textbf{Constraints (if applicable)} \\ 
+            \hline
+            Constant Law & \hspace{3in} & \\ 
+            &&\\
+            \hline
+            Identity Law & \hspace{3in} & \\ 
+            &&\\
+            \hline
+            Sum Law & \hspace{3in} & \\ 
+            &&\\
+            \hline
+            Difference Law & \hspace{3in} & \\ 
+            &&\\
+            \hline
+            Constant Multiple Law & \hspace{3in} & \\ 
+            &&\\
+            \hline
+            Product Law & \hspace{3in} & \\ 
+            &&\\
+            \hline
+            Quotient Law & \hspace{3in} & \\ 
+            &&\\
+            \hline
+            Power-Root Law & \hspace{3in} & \\ 
+            &&\\
+            \hline
+        \end{tabular}
+    \end{center}
+
+    \frq{What are the three conditions for a function to be continuous at a point?}
+    \normalsp
+    
+    \frq{What does it mean for a \textit{function} to be continuous everywhere?}
+    \tinyspace
+
+    \pagebreak
+    
+    \activity{Activity 1}{Solving Limits Using Limit Laws}{Work in a \textbf{group of 2 or 3 people with the same color worksheet as you} to answer these questions. Try not to use your notes.}{15 minutes}
+    \mcq{Evaluate the following limits by using the Basic Limit Laws.}{
+        \task $\lim\limits_{x\to25}\dfrac{3\sqrt{x}-\frac15x}{(x-20)^2}$
+        \hugesp
+        \task $\lim\limits_{x\to 4}\dfrac{x^2+1}{\left(x^3+2\right)\left(x^4+1\right)}$
+    }
+    \pagebreak
+    
+    \activity{Activity 2}{Solving Limits Using Limit Laws}{Work in a \textbf{group of 2 or 3 people with a different color worksheet as you} to answer these questions. Try not to use your notes.}{15 minutes}
+    \mcq{Evaluate the following limits by using the Basic Limit Laws. \textit{Indicate what law you are using at each part.}$$\lim\limits_{x\to2}g(x)=3~~~\text{and}~~~\lim\limits_{x\to2}h(x)=-2$$}{
+        \task $\lim\limits_{x\to2}\dfrac{g(x)+5x}{h(x)^2}$
+        \normalsp
+        \task $\lim\limits_{x\to2}\frac12h(x)\sqrt{g(x)}$
+        \normalsp
+        \task $\lim\limits_{x\to2}\dfrac{g(x)^2}{g(x)-1}$
+        \normalsp
+        \task $\lim\limits_{x\to2}\dfrac{g(x)^{3/2}}{2h(x)}$
+    }
+    \normalsp
+    
+    \activity{Cooldown}{Challenge Problems}{Test your knowledge of previous topics and upcoming topics by answering these questions \textbf{alone}. Try not to use your notes.}{15 minutes}
+    
+    \frq{State two functions $f(x)$ and $g(x)$ such that both $\lim\limits_{x\to1}f(x)$ and $\lim\limits_{x\to1}g(x)$ do not exist, but $\lim\limits_{x\to1}f(x)-2g(x)$ does exist.}
+    \hugesp
+    \frq{State two functions $f(x)$ and $g(x)$ such that both $\lim\limits_{x\to0}f(x)$ and $\lim\limits_{x\to1}g(x)$ do not exist, but $\lim\limits_{x\to1}f(x)+g(x)$ does exist.}    
+\end{document}

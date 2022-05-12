@@ -1,0 +1,75 @@
+\documentclass{siproblemset}
+
+\usepackage{multicol}
+\usepackage{xcolor}
+
+% SI Session Information
+\course{MTH 1321}
+\sessionnum{3}
+\sessiondate{1/28/20}
+
+\warmup{Concept Review}
+\topic{Determining Continuity}
+\topic{Indeterminate Forms}
+\cooldown{Challenge Problems}
+
+% Worksheet Information
+\title{Continuity, Limits of Continuous\linebreak Functions, Indeterminate Forms}
+\sections{Sections 2.4b-2.5}
+\withnamespace
+
+\begin{document}
+    \maketitle
+    
+    \activity{Warmup}{Concept Overview}{Work with a \textbf{partner} to answer these questions. Try not to use your notes.}{15 minutes}
+    
+    \frq{Give the formal definition of left- and right-continuity.}
+    \tinysp
+    
+    \frq{What are the indeterminate forms?}
+    \tinysp
+    
+    \frq{What are the three main techniques for dealing with indeterminate forms?}
+    \Smallsp
+    
+    \pagebreak
+    
+    \activity{Activity 1}{Determining Continuity}{Find a \textbf{new partner with the same color worksheet as yours} to answer these questions. Try not to use your notes.}{30 minutes}
+    
+    \frq{Find and classify the points of discontinuity of $f(x)=\dfrac{\abs{x-5}}{x-5}$.}
+    \largesp
+
+    \frq{Find $a$ and $b$ such that $f$ is continuous everywhere. Use the definition of continuity to justify your answer.}
+    $$f(x)=\begin{cases}
+    x^{-1} & x < -1 \\
+    ax+b & -1 \leq x \leq \frac12 \\
+    x^{-1} & x > \frac 12
+    \end{cases}$$
+    \pagebreak
+    
+    \activity{Activity 2}{Limits of Continuous Functions and Indeterminate Forms}{Find a \textbf{group of three people all with the different color worksheets as yours} to answer these questions. Try not to use your notes.}{30 minutes}
+    \begin{multipartquestion}
+        Evaluate the following limits. If an indeterminate form is found, state the form and use algebra to solve the limit. If the limit does not exist, determine whether the one-sided limits exist (finite or infinite).
+        \frq{$\lim\limits_{z\rightarrow8}\dfrac{z^3-64z}{z-8}$}
+        \smallspace
+        \frq{$\lim\limits_{t\rightarrow0}\dfrac{1-3^{2t}}{1-3^t}$}
+        \smallspace
+        \frq{$\lim\limits_{x\rightarrow36}\dfrac{\sqrt{x}-6}{x-36}$}
+        \smallspace
+        \frq{$\lim\limits_{t\rightarrow4}\dfrac{\sqrt{5-t}-1}{2-\sqrt{t}}$}
+    \end{multipartquestion}
+
+    \pagebreak
+    \activity{Cooldown}{More Indeterminate Forms}{Test your knowledge of these topics \textbf{alone} by attempting these challenge problems then sharing with the people around you.}{15 minutes}
+    \begin{multipartquestion}
+        Evaluate the following limits. If an indeterminate form is found, state the form and use algebra to solve the limit. If the limit does not exist, determine whether the one-sided limits exist (finite or infinite).
+        \frq{$\lim\limits_{h\rightarrow0}\dfrac{\dfrac{1}{(h+2)^2}-\dfrac14}{h}$}
+        \smallspace
+        \frq{$\lim\limits_{k\rightarrow1}\left(\dfrac{1}{1-k}-\dfrac{2}{1-k^2}\right)$}
+        \smallspace
+        \frq{$\lim\limits_{a\rightarrow\frac{\pi}3}\dfrac{2\cos^2a+3\cos a-2}{2\cos a-1}$}
+        \smallspace
+        \frq{$\lim\limits_{x\rightarrow\frac\pi4}\dfrac{\sin x-\cos x}{\tan x - 1}$}
+    \end{multipartquestion}
+    
+\end{document}

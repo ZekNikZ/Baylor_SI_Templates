@@ -1,0 +1,261 @@
+\documentclass{siproblemset}
+
+\usepackage{multicol}
+
+% SI Session Information
+\course{MTH 1321}
+\sessionnum{2}
+\sessiondate{8/22/19}
+
+\warmup{Concept Review}
+\topic{What is a limit?}
+\topic{Limit Laws}
+\topic{Understanding Limits}
+\topic{Solving Limits using Limit Laws}
+\cooldown{Rates of Change and Continuity}
+
+% Worksheet Information
+\title{Rates of Change and\linebreak Introduction to Limits}
+\sections{Sections 2.1-2.3}
+\withnamespace
+
+\begin{document}
+    \maketitle
+    
+    \activity{Warmup}{Limit Concept Overview}{Work with a \textbf{partner} to answer these questions. Try not to use your notes.}{15 minutes}
+    
+    \frq{In your own words, describe what a limit is and/or what it does.}
+    \tinyspace
+    
+    \frq{What are the condition(s) for a limit (such as $\lim\limits_{x\rightarrow2}f(x)$) to exist?}
+    \tinyspace
+    
+    \frq{What are the basic limit laws?}
+    \begin{center}
+        \begin{tabular}{ |c|c|c| } 
+            \hline
+            \multicolumn{3}{|c|}{If $\lim\limits_{x\rightarrow c}f(x)=L$ and $\lim\limits_{x\rightarrow c}g(x)=M$ exist, then:}\\[4ex]
+            \hline
+            \textbf{Law Name} & \textbf{Law Definition} & \textbf{Constraints (if applicable)} \\ 
+            \hline
+            Constant Law & \hspace{3in} & \\ 
+            &&\\
+            \hline
+            Identity Law & \hspace{3in} & \\ 
+            &&\\
+            \hline
+            Sum Law & \hspace{3in} & \\ 
+            &&\\
+            \hline
+            Difference Law & \hspace{3in} & \\ 
+            &&\\
+            \hline
+            Constant Multiple Law & \hspace{3in} & \\ 
+            &&\\
+            \hline
+            Product Law & \hspace{3in} & \\ 
+            &&\\
+            \hline
+            Quotient Law & \hspace{3in} & \\ 
+            &&\\
+            \hline
+            Power Law & \hspace{3in} & \\ 
+            &&\\
+            \hline
+            Root Law & \hspace{3in} & \\ 
+            &&\\
+            \hline
+            Power-Root Law & \hspace{3in} & \\ 
+            &&\\
+            \hline
+        \end{tabular}
+    \end{center}
+    \pagebreak
+    
+    \activity{Activity 1}{Understanding Limits}{Find a \textbf{new partner with the same color worksheet as yours} to answer these questions. Try not to use your notes.}{30 minutes}
+    
+    \begin{multipartquestion}
+        Find the value of the following limits. If the limit does not exist, find the values of the left-hand and right-hand limits.
+        \begin{multicols}{2}
+            \frq{$\lim\limits_{x\rightarrow-2}f(x)$ and $\lim\limits_{x\rightarrow2}f(x)$}
+            \mbox{\begin{tikzpicture}[baseline=(current bounding box.north)]
+                \begin{axis}[
+                    x=1.2cm,
+                    y=1.2cm,
+                    xmin=-3,
+                    xmax=3,
+                    ymin=0,
+                    ymax=4,
+                    axis x line*=middle,
+                    axis y line*=middle,
+                    every axis plot/.append style={ultra thick},
+                    samples=60
+                    ]
+                    \addplot+[black, domain=-3:1.95] {1.5};
+                    \addplot+[black, domain=2:3] {2.5};
+                    \node at (2,1.5) {$\circ$};
+                    \node at (2,2.5) {\textbullet};
+                \end{axis}
+            \end{tikzpicture}}
+            \tinyspace
+        
+            \frq{$\lim\limits_{x\rightarrow-2}f(x)$ and $\lim\limits_{x\rightarrow1}f(x)$}
+            \mbox{\begin{tikzpicture}[baseline=(current bounding box.north)]
+                \begin{axis}[
+                    x=1.2cm,
+                    y=1.2cm,
+                    xmin=-3,
+                    xmax=3,
+                    ymin=-2,
+                    ymax=2,
+                    axis x line*=middle,
+                    axis y line*=middle,
+                    every axis plot/.append style={ultra thick},
+                    samples=100
+                    ]
+                    \addplot+[black, domain=-3:0.999] {1-sqrt(-x+1)};
+                    \addplot+[black, domain=1.05:3] {1};
+                    \node at (1,1) {$\circ$};
+                \end{axis}
+            \end{tikzpicture}}
+            \tinyspace
+        
+            \frq{$\lim\limits_{x\rightarrow-1}f(x)$ and $\lim\limits_{x\rightarrow0}f(x)$}
+            \mbox{\begin{tikzpicture}[baseline=(current bounding box.north)]
+                \begin{axis}[
+                    x=1.2cm,
+                    y=1.2cm,
+                    xmin=-3,
+                    xmax=3,
+                    ymin=0,
+                    ymax=4,
+                    axis x line*=middle,
+                    axis y line*=middle,
+                    every axis plot/.append style={ultra thick},
+                    samples=100
+                    ]
+                    \addplot+[black, domain=-3:-0.01,restrict y to domain =-20:100] {1/(x+1)^2};
+                    \addplot+[black, domain=0.01:3] {x+1/2};
+                    \node at (0,1) {$\circ$};
+                    \node at (0,0.5) {\textbullet};
+                \end{axis}
+            \end{tikzpicture}}
+            \tinyspace
+        
+            \frq{$\lim\limits_{x\rightarrow0}f(x)$ and $\lim\limits_{x\rightarrow2.5}f(x)$}
+            \mbox{\begin{tikzpicture}[baseline=(current bounding box.north)]
+                \begin{axis}[
+                    x=1.2cm,
+                    y=1.2cm,
+                    xmin=-2,
+                    xmax=4,
+                    ymin=-2,
+                    ymax=2,
+                    axis x line*=middle,
+                    axis y line*=middle,
+                    every axis plot/.append style={ultra thick},
+                    samples=100
+                    ]
+                    \addplot+[black, domain=-3:-0.02,restrict y to domain =-20:100] {-x^3/3+2*x};
+                    \addplot+[black, domain=0.02:2.43,restrict y to domain =-20:100] {-x^3/3+2*x};
+                    \addplot+[black, domain=2.46:4,restrict y to domain =-20:100] {-x^3/3+2*x-1};
+                    \node at (0,0) {$\circ$};
+                    \node at (0,1) {\textbullet};
+                    \node at (2.45,0) {$\circ$};
+                    \node at (2.45,-1) {$\circ$};
+                \end{axis}
+            \end{tikzpicture}}
+            \tinyspace
+        \end{multicols}
+    \tinyspace
+    \end{multipartquestion}
+    \newpage
+    \begin{multipartquestion}
+        Estimate the value of the following limits. If the limit does not exist, estimate the values of the left-hand and right-hand limits.
+        \frq{$\lim\limits_{x\rightarrow0}\dfrac{x^2-4x}{x-4}$\hfill
+        \begin{tabular}{ |c|c|c|c|c| } 
+            \hline
+            \textbf{$x$} & \textbf{$-0.001$} & \textbf{$-0.0001$} & \textbf{$0.0001$} &\textbf{ $0.001$} \\
+            \hline
+            \textbf{$f(x)$} & \hspace{2cm} & \hspace{2cm} & \hspace{2cm} & \hspace{2cm} \\
+            \hline
+        \end{tabular}}
+        \mediumspace
+        \frq{$\lim\limits_{x\rightarrow-3}\dfrac{1}{x+3}$\hfill
+            \begin{tabular}{ |c|c|c|c|c| } 
+                \hline
+                \textbf{$x$} & \textbf{$-3.001$} & \textbf{$-3.0001$} & \textbf{$-2.9999$} &\textbf{ $-2.999$} \\
+                \hline
+                \textbf{$f(x)$} & \hspace{2cm} & \hspace{2cm} & \hspace{2cm} & \hspace{2cm} \\
+                \hline
+        \end{tabular}}
+        \mediumspace
+        \frq{$\lim\limits_{x\rightarrow1}\dfrac{x^3-1}{x^2-1}$\hfill
+            \begin{tabular}{ |c|c|c|c|c| } 
+                \hline
+                \textbf{$x$} & \textbf{$0.99$} & \textbf{$0.999$} & \textbf{$1.001$} &\textbf{ $1.01$} \\
+                \hline
+                \textbf{$f(x)$} & \hspace{2cm} & \hspace{2cm} & \hspace{2cm} & \hspace{2cm} \\
+                \hline
+        \end{tabular}}
+    \end{multipartquestion}
+    \newpage
+    
+    \activity{Activity 2}{Solving Limits Using Limit Laws}{Find a \textbf{new partner with the opposite color worksheet as yours} to answer these questions. Try not to use your notes.}{30 minutes}
+    \begin{multipartquestion}
+        Evaluate the following limits by using the Basic Limit Laws. \textit{Show what law you are using at each part.}
+        \begin{multicols}{2}
+            \frq{$\lim\limits_{x\rightarrow3}x^2+2x-1$}
+            \smallspace
+            \frq{$\lim\limits_{x\rightarrow4}\dfrac{3x-14}{x+1}$}
+            \smallspace
+            \frq{$\lim\limits_{x\rightarrow4}\dfrac{x^2+1}{\left(x^3+2\right)\left(x^4+1\right)}$}
+            \smallspace\ 
+            \columnbreak
+            \frq{$\lim\limits_{x\rightarrow25}\dfrac{3\sqrt{x}-\frac15x}{(x-20)^2}$}
+            \largespace
+            \frq{$\left(\lim\limits_{x\rightarrow25}x^2\right)^{\frac35}$}
+            \smallspace
+        \end{multicols}
+    \end{multipartquestion}
+    \begin{multipartquestion}
+    Evaluate the following limits by using the Basic Limit Laws. \textit{Show what law you are using at each part.}
+    $$\lim\limits_{x\rightarrow2}g(x)=3 \text{\ \ \ and\ \ \ }\lim\limits_{x\rightarrow2}h(x)=-2 $$
+        \begin{multicols}{2}
+            \frq{$\lim\limits_{x\rightarrow2}\frac12h(x)\sqrt{g(x)}$}
+            \smallspace
+            \frq{$\lim\limits_{x\rightarrow2}\dfrac{g(x)+5}{h(x)^2}$}
+            \smallspace
+            \frq{$\lim\limits_{x\rightarrow2}\dfrac{g(x)^2}{g(x)-1}$}
+            \smallspace
+            \frq{$\lim\limits_{x\rightarrow2}4h(x)-2g(x)$}
+            \smallspace
+            \frq{$\lim\limits_{x\rightarrow2}\dfrac{g(x)^{3/2}}{2h(x)}$}
+            \smallspace\ 
+        \end{multicols}
+    \end{multipartquestion}
+    
+    \activity{Cooldown}{Looking Back, Looking Forward}{Test your knowledge of previous topics and upcoming topics by answering these questions \textbf{alone} then sharing with the people around you.}{15 minutes}
+    
+    \begin{multipartquestion}
+        \frq{What is the slope of the secant line to the function $f(x)$ between the points corresponding to $x=a$ and $x=a+h$?}
+        \tinyspace
+        \frq{This slope is also called the \underline{\hspace{2in}}.}
+        \frq{What does each axis need to represent in order for the slope of the secant line to be called the ``average velocity''?}
+        \tinyspace
+        \frq{Taking the limit of the average rate of change as $h\rightarrow0$ gives what quantity?}
+        \tinyspace
+    \end{multipartquestion}
+
+    \frq{What is an asymptote? \textit{Both define the term and draw an example.}}
+    \smallspace
+
+    \begin{multipartquestion}
+        What are the three conditions required for a function to be continuous at the point $x=a$?
+        \frq{}
+        \tinyspace
+        \frq{}
+        \tinyspace
+        \frq{}
+    \end{multipartquestion}
+\end{document}

@@ -1,0 +1,100 @@
+\documentclass{siproblemset}
+
+\usepackage{multicol}
+\usepackage{xcolor}
+
+% SI Session Information
+\course{MTH 1321}
+\sessionnum{5}
+\sessiondate{9/13/21}
+
+\warmup{Concept Review}
+\topic{Trigonometric Limits}
+\topic{Limits at Infinity}
+\topic{The Squeeze Theorem}
+\cooldown{Q\&A}
+
+% Worksheet Information
+\title{The Squeeze Thm., Trig.\linebreak Limits, Limits at Infinity}
+\sections{Section 2.5b-2.7}
+\withnamespace
+
+\begin{document}
+    \maketitle
+    
+    \activity{Warmup}{Concept Review and Overview}{Try these problems \textbf{alone} as your peers join the session. Do your best to not refer to your notes.}{5 minutes}
+    
+    \frq{What is the Squeeze Theorem?}
+    \Tinysp
+    
+    \mcq[2]{Give the values of the following limits.}{
+        \task $\lim\limits_{u\to 0}\dfrac{\sin u}{u}=\lim\limits_{u\to 0}\dfrac{u}{\sin u}=$
+        \task $\lim\limits_{u\to 0}\dfrac{1-\cos u}{ u}=$
+        \task $\lim\limits_{u\to -\infty}\dfrac{1}{u}=$
+        \task $\lim\limits_{u\to \infty}\dfrac{1}{u}=$
+        \task $\lim\limits_{u\to -\infty}u^n=~~~~~~~~~~~~(n>0\text{ and even})$
+        \task $\lim\limits_{u\to \infty}u^n=~~~~~~~~~~~~(n>0\text{ and even})$
+        \task $\lim\limits_{u\to -\infty}u^n=~~~~~~~~~~~~(n>0\text{ and odd})$
+        \task $\lim\limits_{u\to \infty}u^n=~~~~~~~~~~~~(n>0\text{ and odd})$
+        \task $\lim\limits_{u\to -\infty}b^u=~~~~~~~~~~~~(b>1)$
+        \task $\lim\limits_{u\to \infty}b^u=~~~~~~~~~~~~(b>1)$
+        \task $\lim\limits_{u\to -\infty}\paren{\dfrac1b}^u=~~~~~~~~~~~~(b>1)$
+        \task $\lim\limits_{u\to \infty}\paren{\dfrac1b}^u=~~~~~~~~~~~~(b>1)$
+        \task $\lim\limits_{u\to \infty}\dfrac{a_0x^m+a_1x^{m-1}+\cdots}{b_0x^n+b_1x^{n-1}+\cdots}=$   
+    }
+
+
+    \frq{Given $g(x)=\dfrac{1}{x}$, is there some $c$ such that $g(c)=\dfrac34$ where $1\leq c\leq 2$?}
+    
+    \pagebreak
+    
+    \activity{Activity 1}{Trig Limits}{Work together with those \textbf{with the same colored worksheet} to answer these questions. Do your best to not refer to your notes while working on these problems.}{15 minutes}
+     
+    \frq{Evaluate the limit: $\lim\limits_{t\to0}\dfrac{t}{\sin(4t)}$}
+    \normalsp
+    \frq{Evaluate the limit: $\lim\limits_{\theta\to0}\dfrac{\sin^2(\theta)-2+\cos(2\theta)+\cos^2(\theta)}{\theta}$}
+    \Normalsp
+    \frq{Evaluate the limit: $\lim\limits_{t\to0}\dfrac{\sin(\pi t)}{3t}$}
+    \normalsp
+    \pagebreak
+    
+    \frq{Evaluate the limit: $\lim\limits_{x\to0}x\cot x$}
+    \normalsp
+    \frq{Evaluate the limit: $\lim\limits_{x\to\pi/2}x\csc x$}
+    \normalsp
+    \frq{Evaluate the limit: $\lim\limits_{t\to0}\dfrac{\sec(x)-1}{x}$}
+    \normalsp
+
+    \pagebreak
+    \activity{Activity 2}{Limits at Infinity}{Work together with those \textbf{with different colored worksheet} to answer these questions. Do your best to not refer to your notes while working on these problems.}{15 minutes}
+    
+    \mcq{Evaluate both $\lim\limits_{x\to-\infty}f(x)$ and $\lim\limits_{x\to\infty}f(x)$ for the following functions.}{
+        \task $f(x)=18x^3-4x^7+9$
+        \Hugesp
+        \task $f(x)=\dfrac{x^3-2x+11}{3-6x^5}$
+        \Largesp
+    }
+    \pagebreak
+    
+    \frq{Evaluate the limit: $\lim\limits_{t\to\infty}\dfrac{t^{5/2}+3\sqrt{t}}{\sqrt{t}}$}
+    \Normalsp
+    \frq{Evaluate the limit $\lim\limits_{x\to-\infty}\dfrac{\sqrt{7+9x^2}}{1-2x}$}
+    \Normalsp
+    \begin{multipartquestion}
+        \frq{How many horizontal asymptotes \textit{can} a function have?}
+        \tinysp
+        \frq{How many vertical asymptotes \textit{can} a function have?}
+        \tinysp
+    \end{multipartquestion}
+    \frq{Find the horizontal asymptotes, if any of $f(x)=\dfrac{10}{1+3^{-x}}$}
+    \Smallsp
+    
+    \activity{Activity 3}{Squeeze Theorem}{Work together with the same groups as last time to answer these questions. Do your best to not refer to your notes while working on these problems.}{15 minutes}
+    
+    \mcq{Compute the following limits.}{
+        \task $\lim\limits_{x\to 2}(x-2)\sin\paren{\dfrac{3}{2-x}}$
+        \hugesp
+        \task $\lim\limits_{\theta\to 0}\paren{1+\theta^2\cos\paren{e^{-\frac{1}{\theta}}}}$
+    }
+    
+\end{document}

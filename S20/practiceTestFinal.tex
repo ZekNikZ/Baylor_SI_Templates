@@ -1,0 +1,265 @@
+\documentclass{siproblemset}
+
+\usepackage{multicol}
+\usepackage{xcolor}
+\usepackage{mathtools}
+
+% SI Session Information
+\course{MTH 1321}
+\sessionnum{FPT}
+\sessiondate{5/3/21}
+
+% Worksheet Information
+\title{Final Exam Practice Test}
+\withnamespace
+
+\definecolor{darkred}{RGB}{110,0,0}
+
+%\debugmode
+
+\begin{document}
+    \maketitle
+    
+    \begin{center}
+        \framebox{
+            \begin{minipage}{\textwidth}
+                \begin{center}
+                    \textbf{When completing this practice test, do your best to mimic the test environment:}
+                \end{center}
+                \begin{enumerate}
+                    \item Do not use a calculator.
+                    \item Try not to use your notes.
+                    \item Time yourself, make sure you are completing the problems at a comfortable pace. Remember that you will only get 2 hours for the actual exam (with fewer questions of course).
+                    \item Do trivial simplifications in your answers.
+                \end{enumerate}
+                \begin{center}
+                    \color{darkred}\textbf{ Please do not share this practice test with anyone else. \underline{Your} commitment to SI and reviewing material earned this, not anyone else's.}
+                \end{center}
+                {\centering When you have finished the practice test, check Canvas to check your answers.\\}
+            \end{minipage}
+        }
+    \end{center}
+
+    % Chapter 2
+    \frq{For $f(x)=\sqrt{2x}$ compute the slopes of the secant lines from 16 to each of $16\pm 0.01$, $16\pm 0.001$, $16\pm 0.0001$ and use those values to estimate the slope of the tangent line at $x=16$. \textit{Note that this problem requires a calculator. You will not get a calculator on your final, but this is good practice nonetheless.}}
+    \newpage
+    \mcq{Evaluate the limit if it exists. If not, indicate whether it approaches $\infty$ or $-\infty$.}{
+        \task $\lim\limits_{x\to-1}\dfrac{3x^2+4x+1}{x+1}$
+        \tinysp
+        \task $\lim\limits_{x\to-2}\dfrac{5}{x^4}$
+        \tinysp
+        \task $\lim\limits_{x\to1}\dfrac{x^3-x}{x-1}$
+        \smallsp
+        \task $\lim\limits_{x\to0}\dfrac{e^{3x}-e^x}{e^x-1}$
+        \Smallsp
+        \task $\lim\limits_{\theta\to0}\dfrac{\sin5\theta}{\theta}$
+        \Smallsp
+        \task $\lim\limits_{x\to0}\dfrac{\sin4x}{\sin3x}$
+        \Smallsp
+    }
+    \frq{Find a constant $b$ such that $h$ is continuous at $x=2$, where}
+    $$h(x)=\begin{cases} 
+    x+1 & \text{for }\abs{x}<2 \\
+    b-x^2 & \text{for }\abs{x}\geq2
+    \end{cases}$$
+    \Smallsp
+    \frq{Find the horizontal asymptote(s) of the following function:}
+    $$f(x)=\frac{9x^2-4}{2x^2-x}$$
+    \Smallsp
+    \mcq[2]{Calculate (a)-(d), assuming that $$\lim\limits_{x\to3}f(x)=6~~~~~\lim\limits_{x\to3}g(x)=4$$}{
+        \task $\lim\limits_{x\to3}(f(x)-2g(x))$
+        \smallsp
+        \task $\lim\limits_{x\to3}x^2f(x)$
+        \smallsp
+        \task $\lim\limits_{x\to3}\dfrac{f(x)}{g(x)+x}$
+        \task $\lim\limits_{x\to3}(2g(x)^3-g(x)^{3/2})$
+    }
+    \newpage
+    \mcq[2]{Sketch the graph of a function $f$ such that }{
+        \task $\lim\limits_{x\to2^-}f(x)=1$
+        \task $\lim\limits_{x\to2^+}f(x)=3$
+        \task $\lim\limits_{x\to4}f(x)$ exists but does not equal $f(4)$
+    }
+    \Smallsp
+    \mcq{True or false?}{
+        \task If $\lim\limits_{x\to3}f(x)$ exists, then $\lim\limits_{x\to3}f(x)=f(3)$.
+        \task If $\lim\limits_{x\to0}\dfrac{f(x)}{x}=1$, then $f(0)=0$.
+        \task If $\lim\limits_{x\to-7}f(x)=8$, then $\lim\limits_{x\to-7}\dfrac{1}{f(x)}=\dfrac18$.
+        \task If $\lim\limits_{x\to5^+}f(x)=4$ and $\lim\limits_{x\to5^-}=8$, then $\lim\limits_{x\to5}f(x)=6$.
+        \task If $\lim\limits_{x\to0}\dfrac{f(x)}{x}=1$, then $\lim\limits_{x\to0}f(x)=0$.
+        \task If $\lim\limits_{x\to5}f(x)=2$, then $\lim\limits_{x\to5}f(x)^3=8$
+    }
+    \frq{Use the Intermediate Value Theorem to prove that the curves $y=x^2$ and $y=\cos x$ intersect.}
+    \newpage
+    
+    % Chapter 3
+    \frq{Compute $f'(a)$ using the limit definition of the derivative and find an equation of the tangent line to the graph of $f$ at $x=a$.$$f(x)=\dfrac{1}{x-3}$$}
+    \Largesp
+    \frq{Each graph in the figure below shows the graph of a function $f$ and its derivative $f'$. Determine which is the function and which is the derivative.}
+    \begin{center}
+        \includegraphics[width=0.6\linewidth]{"FigureCH3-2"}
+    \end{center}
+    
+    \frq{Use the table below of the number $A(t)$ of automobiles (in millions) manufactured in the United States in year $t$ to complete this problem. What is the interpretation of $A'(t)$? Estimate $A'(1971)$. Does $A'(1974)$ appear to be positive or negative?}
+    \begin{center}
+        \begin{tabular}{|l|c|c|c|c|c|c|c|}
+            \hline
+            t&1970&1971&1972&1973&1974&1975&1976\\
+            \hline
+            $A(t)$&6.55&8.58&8.83&9.67&7.32&6.72&8.50\\
+            \hline
+        \end{tabular}
+    \end{center}
+    \newpage
+    \mcq{Compute the derivative.}{
+        \task $y=3x^5-7x^2+4$
+        \Tinysp
+        \task $y=\sqrt{x+\sqrt{x+\sqrt{x}}}$
+        \Tinysp
+        \task $y=\dfrac{1}{1+\sec t}$
+        \Tinysp
+        \task $y=z\csc(9z+1)$
+        \Tinysp
+        \task $f(x)=\ln(4x^2+1)$
+        \Tinysp
+        \task $f(x)=7^{-2x}$
+        \Tinysp
+        \task $f(x)=(\cos^2x)^{\cos x}$
+        \Tinysp
+    }
+\newpage
+    \frq{Find the $x$-values of the points on the graph of $f(x)=x^3-3x^2+x+4$ where the tangent line has slope 10.}
+    \Tinysp
+    \frq{Compute $\dfrac{\text{d}y}{\text{d}x}$ and $\dfrac{\text{d}^2y}{\text{d}x^2}$ given $6xy+y^2=10$.}
+    \Normalsp
+    \frq{Consider a cylinder whose volume is increasing at a rate of $2 \text m^2/\text s$  and whose radius is decreasing at a rate of $1 \text m/\text s$. What is the rate of change of the height of the cylinder when its diameter is $2 \text m$ and its volume is $10 \text m$?}
+    \newpage
+    \frq{A light moving at $\SI{0.8}{\meter/\second}$ approaches a man standing $\SI{4}{\meter}$ from a wall (as seen below). The light is $\SI{1}{\meter}$ above the ground. How fast is the tip $P$ of the man's shadow moving when the light is $\SI{7}{\meter}$ from the wall?}
+    \begin{center}
+        \includegraphics[width=0.6\linewidth]{"FigureCH3-11"}
+    \end{center}
+    \Largesp
+    
+    % Chapter 4
+    \frq{Find the linearization of $v(t)=32t-4t^2$ at $t=2$.}
+    \newpage
+    \frq{Verify the Mean Value Theorem for $f(x)=\ln x$ on $[1,4]$.}
+    \normalsp
+    \frq{Find the critical points and determine whether they are minima, maxima, or neither:}
+    $$f(x)=x^{2/3}(1-x)$$
+    \Normalsp
+    \frq{A function $f$ has derivative $f'(x)=\dfrac{1}{x^4+1}$. Where on the interval $[1,4]$ does $f$ take on its maximum value?}
+    \newpage
+    \frq{Find the extreme values of $R(t)=\dfrac{t}{t^2+t+1}$ on the interval $[0,3]$.}
+    \Normalsp
+    \frq{Find the points of inflection of $f(x)=(x^2-x)e^{-x}$.}
+    \Normalsp
+    \frq{Draw a curve $y=f(x)$ for which $f'$ and $f''$ have signs as indicated below:}
+    \begin{center}
+        \includegraphics[width=0.6\linewidth]{"FigureCH4-2"}
+    \end{center}
+    \newpage
+    \frq{Sketch the graph of $y=12x-3x^2$, including the transition points and asymptotic behavior.}
+    \newpage
+%    \frq{A rectangular open-topped box of height $h$ with a square base of side $b$ has volume $V=\SI{4}{\meter^3}$. Two of the side faces are made of material costing $\$40/\si{\meter^2}$. The remaining sides cost $\$20/\si{\meter^2}$. Which values of $b$ and $h$ minimize the cost of the box?}
+%    \Hugesp
+%    \frq{Find the dimensions of a cylindrical can with a bottom but no top of volume $\SI{4}{\meter^3}$ that uses the least amount of metal.}
+%    \Hugesp
+    
+    % Chapter 5
+    \frq{Estimate $R_4$, $L_4$, and $M_4$ on $[1,3]$ for the function shown below:}
+    \begin{center}
+        \includegraphics[width=0.4\linewidth]{"FigureCH5-1"}
+    \end{center}
+    \Hugesp
+    \mcq{Compute the integral.}{
+        \task $\int(4x^3-2x^2)\dd x$
+        \Smallsp
+        \task $\int\tan3\theta\sec3\theta\dd\theta$
+        \Smallsp
+        \task $\int\dfrac{(x^2+1)\dd x}{(x^3+3x)^4}$
+        \Smallsp
+        \task $\int\dfrac{x^5+3x^4}{x^2}\dd x$
+        \Smallsp
+        \task $\int_{-3}^{3}\abs{x^2-4}\dd x$
+        \Smallsp
+        \task $\int\dfrac{\dd t}{t(1+(\ln t)^2)}$
+        \Smallsp
+        \task $\int\dfrac{\dd x}{x\sqrt{\ln x}}$
+        \Smallsp
+        \task $\int\dfrac{\dd x}{\sqrt{9-4x^2}}$
+        \Smallsp
+    }
+    \frq{Solve the differential equation $\dddx[y]=4x^3$ given that $y(1)=4$.}
+    \newpage
+    \frq{Combine the following to write as a single integral.}
+    $$\int_{0}^{8}f(x)\dd x+\int_{-2}^{0}f(x)\dd x+\int_{8}^{6}f(x)\dd x$$
+    \smallsp
+    \mcq{A particle starts at the origin at time $t=0$ and moves with velocity $v(t)$ as shown below.}{
+        \task How many times does the particle return to the origin in the first 12 seconds?
+        \task What is the particle's maximum distance from the origin?
+        \task What is the particle's maximum distance to the left of the origin?
+    }
+    \begin{center}
+        \includegraphics[width=0.6\linewidth]{"FigureCH5-5"}
+    \end{center}
+    \newpage
+    \mcq{Compute the derivative.}{
+        \task $\dddf{y}\int_{-2}^{y}3^x\dd x$
+        \smallsp
+        \task $G'(2)$, where $G(x)=\int_{0}^{x^3}\sqrt{t+1}\dd t$
+        \Smallsp
+    }
+    
+    
+    \begin{multipartquestion}
+        The function $f$ is continuous for all values of $x$. Information about the sign of $f'$ and $f''$ is organized in the table below.
+        
+        \begin{center}
+            \begin{tabular}{|c|c|c|c|c|}
+                \hline
+                &$x<1$&$1<x<2$&$2<x<3$&$x>3$\\
+                \hline
+                Sign of $f'$&$-$&$-$&$+$&$-$\\
+                \hline
+                Sign of $f''$&$+$&$-$&$-$&$+$\\
+                \hline
+            \end{tabular}
+        \end{center}
+        
+        Mark each of the following statements as true (T) or false (F). You do \textit{not} need to justify your answer.
+        \frq{$f$ has a local minimum at $x=2$}
+        \frq{$f$ is decreasing and concave down at $x=4$}
+        \frq{$f$ has an inflection point at $x=1$}
+        \frq{$f'$ is decreasing at $x=2.5$}
+        \frq{$f'$ has a local extremum at $x=1$}
+    \end{multipartquestion}
+\newpage
+    % Misc
+    \begin{multipartquestion}
+        Researchers are studying the effectiveness of a new antibiotic. Let $P(t)$ be the number of bacteria present $t$ hours after the antibiotic is administered. Data collected by the researchers indicated that the over the first $12$ hours, the number of bacteria decreased while its rate of change increased, and then afterwards the number of bacteria continued to decrease, but its rate of change decreased.
+        \mcq{Which first derivative statements best describe this scenario?}{
+            \task $P'(t) > 0$ for $0 < t < 12$ and $P'(t) > 0$ for $t > 12$
+            \task $P'(t) > 0$ for $0 < t < 12$ and $P'(t) < 0$ for $t > 12$
+            \task $P'(t) < 0$ for $0 < t < 12$ and $P'(t) > 0$ for $t > 12$
+            \task $P'(t) < 0$ for $0 < t < 12$ and $P'(t) < 0$ for $t > 12$
+            \task None of the above
+        }
+        \mcq{Which second derivative statements best describe this scenario?}{
+            \task $P''(t) > 0$ for $0 < t < 12$ and $P''(t) > 0$ for $t > 12$
+            \task $P''(t) > 0$ for $0 < t < 12$ and $P''(t) < 0$ for $t > 12$
+            \task $P''(t) < 0$ for $0 < t < 12$ and $P''(t) > 0$ for $t > 12$
+            \task $P''(t) < 0$ for $0 < t < 12$ and $P''(t) < 0$ for $t > 12$
+            \task None of the above
+        }
+        \mcq{At $t=12$, the graph of $y=P(t)$ has}{
+            \task a local maximum
+            \task a local minimum
+            \task a critical number but no local extremum
+            \task an inflection point
+            \task None of the above
+        }
+        \frq{Assuming that there are a positive number of bacteria, $P_0$, present at time $t = 0$ and that at time $t = 24$, all bacteria are eliminated, sketch a possible graph of $P$ corresponding to all the criteria described above.}
+    \end{multipartquestion}
+    
+\end{document}

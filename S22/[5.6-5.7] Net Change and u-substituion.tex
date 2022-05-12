@@ -1,0 +1,80 @@
+\documentclass{siproblemset}
+
+% SI Session Information
+\course{MTH 1321}
+\sessionnum{20}
+\sessiondate{4/28/22}
+
+%\warmup{Concept Review}
+\topic{Net Change}
+\topic{Distance vs. Displacement}
+\topic{u-substitution}
+%\cooldown{Test Builder}
+
+% Worksheet Information
+\title{Net Change and\linebreak u-substitution}
+\sections{Sections 5.6 and 5.7}
+\withnamespace
+\newcommand{\dx}{\text{d}x}
+
+\begin{document}
+    \maketitle
+    
+    \activity{Warmup}{Concept Overview}{Work with a \textbf{partner} to answer these questions. Try not to use your notes.}{10 minutes}
+    
+    \frq{What is the expression for net change of a function $f(x)$ on the interval $[a,b]$?}
+    \smallspace
+    
+    \frq{What is distance? What is displacement? Given the velocity function $v(t)$, construct an integral to find both quantities on the interval $t=[0\text s,5\text s]$.}
+    \Smallsp
+    
+    \frq{What are the steps to solve a $u$-substitution problem?}
+    
+    \pagebreak
+    
+    \activity{Activity 1}{Solve and Teach}{Work with someone around you to answer these questions. Try not to use your notes.}{15 minutes}
+    
+    \frq{A survey shoes that a candidate is gaining votes at a rate of $2000t+1000$ votes per day, where $t$ is the number of days since she announced her candidacy. How many supporters will the candidate have after 60 days (assuming that she had no supporters at $t=0$)?}
+    \largespace
+    
+    \frq{Water flows out of a $10000$L tank at a rate of $1000+25t$ liters per hour (where $t$ is in hours). Assuming the tank was full to start, how much water is left after $4$ hours?}
+    \hugespace
+    
+%    \frq{Over the course of $\pi$ seconds, a particle moves in a straight line with velocity $v(t)=t+\sin t$ m/s. What was the total distance and displacement of the particle on its journey?}
+%    \hugespace
+    
+    \frq{A particle moves in a straight line with velocity $v(t)=t^{-2}-1$ m/s. Find the displacement and total distance traveled over the time interval $[0.5,2]$ seconds.}
+    \pagebreak
+    
+%    \frq{The traffic flow rate past a certain point on a highway is $q(t)=3000+2000t-300t^2$ ($t$ is in hours), where $t=0$ is 8am. How many cars pass by in the time interval from 8 to 10am?}
+%    \largespace
+    
+    \activity{Activity 2}{Basic $u$-substitution}{Make a \textbf{group of two or three, all with the same colored worksheets}, to work together to do your assigned parts. Then, try to do the other parts. Try not to use your notes. \textbf{DO NOT use a calculator}.}{30 minutes}
+    
+    \mcq{Compute the following indefinite integrals.}{
+        \task $\int\frac{\dx}{\sqrt{x}\paren{1+\sqrt{x}}^2}$
+        \Smallsp
+        \task $\int\sec^2(\theta)\tan(\theta)\dd\theta$
+        \Smallsp
+        \task $\int\sqrt{4x-1}\dx$
+        \Smallsp
+        \task $\int t\sqrt{4t-1}\dd t$
+        \Smallsp
+        \task $\int \dfrac{x+1}{\sqrt{x+1}}\dd x$
+    }
+    \newpage
+    
+    \activity{Activity 3}{Bounded $u$-substitution}{Make a \textbf{group of two or three, all with the same colored worksheets}, to work together to do your assigned parts. Then, try to do the other parts. Try not to use your notes. \textbf{DO NOT use a calculator}.}{30 minutes}
+    \mcq{Compute the following definite integrals.}{
+        \task $\int_{-8/3}^{-2}(3x+8)^{11}\dx$
+        \Smallsp
+        \task $\int_{1}^{2}\frac{t\dd t}{\sqrt{t^2+9}}$
+        \Smallsp
+        \task $\int_{\arcsin{(\pi/4)}}^{\arcsin{(\pi/2)}}\cos(\theta)\cos(\sin(\theta))\dd\theta$
+        \Smallsp
+        \task $\int_{1}^{2}xe^{x^2}\dx$
+        \Smallsp
+    }
+    \newpage
+    
+\end{document}

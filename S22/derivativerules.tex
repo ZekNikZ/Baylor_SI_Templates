@@ -1,0 +1,98 @@
+\documentclass{siproblemset}
+
+\usepackage{tabularx, array}
+
+% Worksheet Information
+\title{Table of Derivative Rules}
+\sections{Last updated 3/15/2022}
+
+\renewcommand\tabularxcolumn[1]{>{\vspace{\fill}}m{#1}<{\vspace{\fill}}}
+\renewcommand\arraystretch{2.1}
+
+\newcolumntype{Y}{>{\centering\arraybackslash}X}
+
+\begin{document}
+    \maketitle
+    \setcounter{section}{-1}
+    \section{Chain Rule}
+    \begin{tabularx}{\textwidth}{Y Y Y}
+        $\left[f(g(x))\right]'=f'(g(x))g'(x)$ \hspace{2cm} & 
+        $\left[f(u)\right]'=f'(u)u'$ \hspace{2cm}  &
+        $\dddx[f]=\dddf[f]{u}\dddx[u]$ \hspace{2cm} 
+    \end{tabularx}
+    
+    \section{Basic Derivative Rules}
+    \begin{tabularx}{\textwidth}{|>{\vspace{\fill}\centering\arraybackslash}m{3.5cm}<{\vspace{\fill}}|Y Y|}
+        \hline
+        \textbf{Name} & \textbf{Lagrange Notation} & \textbf{Chain Rule Form} \\
+        \hline
+        Constant & $[c]'=0$ &\\
+        \hline
+        Variable & $[x]'=1$ &\\
+        Power & $[x^n]'=nx^{n-1}$ & $[u^n]'=u^{n-1}u'$ \\
+        \hline
+        Constant Multiple & $[cf]'=c[f]'$ &\\
+        \hline
+        Sum/Difference & $[f\pm g]'=f'\pm g'$ &\\
+        \hline
+        Product & $[f\cdot g]'=f'g+fg'$ &\\
+        \hline
+        Quotient & $\left[\dfrac fg\right]'=\dfrac{gf'-fg'}{g^2}$ &\\
+        \hline
+        Exponential & $\left[e^x\right]'=e^x$ & $\left[e^u\right]=e^uu'$ \\
+        \hline
+    \end{tabularx}
+
+    \section{Exponential Derivative Rules}
+    \begin{tabularx}{\textwidth}{|>{\vspace{\fill}\centering\arraybackslash}m{3.5cm}<{\vspace{\fill}}|Y Y|}
+        \hline
+        \textbf{Name} & \textbf{Lagrange Notation} & \textbf{Chain Rule Form} \\
+        \hline
+        Exponential & $\left[e^x\right]'=e^x$ & $\left[e^u\right]=e^uu'$ \\
+        General Exponential & $\left[a^x\right]'=a^x\ln(a)$ & $\left[a^u\right]=a^u\ln(a)u'$ \\
+        \hline
+        Natural Logarithm & $\left[\ln(x)\right]'=\dfrac1x$ & $\left[\ln(u)\right]=\dfrac{u'}{u}$ \\
+        General Logarithm & $\left[\log_b(x)\right]'=\dfrac{1}{x\ln(b)}$ & $\left[\log_b(u)\right]=\dfrac{u'}{u\ln(b)}$ \\
+        \hline
+    \end{tabularx}
+
+    \section{Trigonometric Derivative Rules}
+    \begin{tabularx}{\textwidth}{|>{\vspace{\fill}\centering\arraybackslash}m{3.5cm}<{\vspace{\fill}}|Y Y|}
+        \hline
+        \textbf{Function} & \textbf{Lagrange Notation} & \textbf{Chain Rule Form} \\
+        \hline
+        $\sin (x)$ & $[\sin (x)]'=\cos(x)$ & $[\sin (u)]'=\cos(u)u'$ \\
+        $\cos(x)$ & $[\cos (x)]'=-\sin (x)$ & $[\cos (u)]'=-\sin(u)u'$ \\
+        \hline
+        $\sec(x)$ & $[\sec(x)]'=\sec(x)\tan(x)$ & $[\sec(u)]'=\sec(u)\tan(u)u'$ \\
+        $\csc(x)$ & $[\csc(x)]'=-\csc(x)\cot(x)$ & $[\csc(u)]'=-\csc(u)\cot(u)u'$ \\
+        \hline
+        $\tan(x)$ & $[\tan(x)]'=\sec^2(x)$ & $[\tan(u)]'=\sec^2(u)u'$ \\
+        $\cot(x)$ & $[\cot(x)]'=-\csc^2(x)$ & $[\cot(u)]'=-\csc^2(u)u'$ \\
+        \hline
+    \end{tabularx}
+
+    \section{Inverse Trigonometric Derivative Rules}
+    \begin{tabularx}{\textwidth}{|>{\vspace{\fill}\centering\arraybackslash}m{3.5cm}<{\vspace{\fill}}|Y Y|}
+        \hline
+        \textbf{Function} & \textbf{Lagrange Notation} & \textbf{Chain Rule Form} \\
+        \hline
+        $\arcsin(x)$ & $[\arcsin (x)]'=\dfrac{1}{\sqrt{1-x^2}}$ & $[\arcsin(u)]'=\dfrac{u'}{\sqrt{1-u^2}}$ \\
+        $\arccos(x)$ & $[\arccos(x)]'=-\dfrac{1}{\sqrt{1-x^2}}$ & $[\arccos(u)]'=-\dfrac{u'}{\sqrt{1-u^2}}$ \\
+        \hline
+        $\arctan(x)$ & $[\arctan (x)]'=\dfrac{1}{1+x^2}$ & $[\arctan(u)]'=\dfrac{u'}{1+u^2}$ \\
+        $\arccot(x)$ & $[\arccot (x)]'=-\dfrac{1}{1+x^2}$ & $[\arccot(u)]'=-\dfrac{u'}{1+u^2}$ \\
+        \hline
+    \end{tabularx}
+
+    \section{Other Common Derivatives}
+    \begin{tabularx}{\textwidth}{|>{\vspace{\fill}\centering\arraybackslash}m{3.5cm}<{\vspace{\fill}}|Y Y|}
+        \hline
+        \textbf{Function} & \textbf{Lagrange Notation} & \textbf{Chain Rule Form} \\
+        \hline
+        $\dfrac{1}{x}=x^{-1}$ & $\left[\dfrac{1}{x}\right]'=-\dfrac{1}{x^2}=-x^{-2}$ & $\left[\dfrac{1}{u}\right]'=-\dfrac{u'}{u^2}=-u^{-2}u'$ \\
+        \hline
+        $\sqrt{x}=x^{1/2}$ & $[\sqrt{x}]'=\dfrac{1}{2\sqrt{x}}=\dfrac{1}{2}x^{-1/2}$ & $[\sqrt{u}]'=\dfrac{u'}{2\sqrt{u}}=\dfrac{1}{2}u^{-1/2}u'$ \\
+        \hline
+    \end{tabularx}
+\end{document}

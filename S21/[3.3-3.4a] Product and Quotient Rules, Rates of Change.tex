@@ -1,0 +1,109 @@
+\documentclass{siproblemset}
+
+\usepackage{multicol}
+\usepackage{xcolor}
+
+% SI Session Information
+\course{MTH 1321}
+\sessionnum{8}
+\sessiondate{2/25/21}
+
+\warmup{Overview of Basic Derivative Rules}
+\topic{Evaluating Derivatives}
+\cooldown{Applications of the Derivative}
+
+% Worksheet Information
+\title{Product and Quotient Rules,\linebreak Rates of Change}
+\sections{Section 3.3-3.4a}
+\withnamespace
+
+\begin{document}
+    \maketitle
+    
+    \activity{Warmup}{Concept Review}{Try these problems \textbf{alone} as your peers join the session. Do your best to not refer to your notes.}{15 minutes}
+    
+    \mcq[2]{Evaluate the following:}{
+        \task $\dddx \left[f(x)\cdot g(x)\right]$
+        \task $\dddx \left[ \dfrac{f(x)}{g(x)}\right] $
+    }
+    \tinysp
+    
+    \frq{What is the rate of change of a function $f(t)$ at a time $t=t_0$?}
+    \nospace
+    \frq{What is the mathematical relationship between position, velocity, acceleration, and speed?}
+    \smallspace
+    \begin{multipartquestion}
+        What are the units of the derivative of the following functions?
+        \frq{$s(t)$, $v(t)$, $a(t)$; $v(t)$ is the first derivative of $s(t)$, $a(t)$ is the first derivative of $v(t)$, $s(t)$ is in \SI{}{\centi\meter}, and $t$ is in \SI{}{\milli\second}.}
+        \smallspace
+        \frq{$C(n)$; $C(n)$ gives the cost, in dollars, of $n$ widgets from the widget factory.}
+        \nospace
+        \frq{$f(x)=x^2$; $x$ is in meters.}
+    \end{multipartquestion}
+    
+    \pagebreak
+    \activity{Activity 1}{Computing Derivatives Using Derivative Rules}{Work together in your \textbf{breakout rooms} to answer these questions. Do your best to not refer to your notes while working on these problems.}{30 minutes}
+
+    \mcq{Compute the derivative.}{
+        \task $f'(2),~~f(x)=x^3e^{x+2}$
+        \Smallsp
+        \task $\left[ (2x-9)\left(4e^x+1\right) \right]'$
+        \Smallsp
+        \task $f(x)=\dfrac{e^x}{x^2+1}$
+        \Smallsp
+        \task $f(x)=x^2(3+x^{-2})$
+        \Smallsp
+        \task $\dder[z]{t}\Bigr|_{t=3},~~z=\dfrac{-1}{10-t}$
+        \Normalsp
+        \task $\dddx\left[ \left(\sqrt x - 1\right)\left(\sqrt x + 1\right)\right] $
+        \Smallsp
+        \task $\left[x^{3/5}e^{5/3}\right]'$
+        \Smallsp
+        \task $g(u)=\dfrac{u+1}{e^u}$
+        \Smallsp
+    }\pagebreak
+
+    \activity{Activity 2}{Derivatives From a Table}{Work together in your \textbf{breakout rooms} to answer these questions. Do your best to not refer to your notes while working on these problems.}{30 minutes}
+
+    \begin{multipartquestion}
+        Use the following table to find the derivatives.
+        
+        \begin{center}
+            \begin{tabular}{ |c|c|c|c| }
+            	\hline
+            	$f(3)$ & $f'(3)$ & $g(3)$ & $g'(3)$ \\ \hline
+            	$5$    &   $3$   &  $-2$  &   $6$   \\ \hline
+            \end{tabular}
+        \end{center}
+            
+        \frq{$(fg)'(3)$}
+        \Smallsp
+        \frq{$(f/g)'(3)$}
+        \Normalsp
+        \frq{$\left[ (x+2)f(x)\right]'\Bigr|_{x=3} $}
+        \pagebreak
+        
+        \begin{center}
+            \begin{tabular}{ |c|c|c|c| }
+                \hline
+                $f(3)$ & $f'(3)$ & $g(3)$ & $g'(3)$ \\ \hline
+                $5$    &   $3$   &  $-2$  &   $6$   \\ \hline
+            \end{tabular}
+        \end{center}
+        \frq{$G'(3)$ where $G(x)=(g(x))^2$}
+        \Smallsp
+        \frq{$\left.\dddx[y]\right|_{x=3}$ where $y=f(x)g(3)+g(x)$}
+        \Smallsp
+    \end{multipartquestion}
+
+    \frq{Compute the following derivative.}
+    $$\dddf{t}\left[\sqrt{t}e^{2t}\right]$$
+    \pagebreak
+    
+    \activity{Cooldown}{Rates of Change}{Try these problems \textbf{alone}. Do your best to not refer to your notes.}{15 minutes}
+    
+    \frq{Find the rate of change of $f(x)$ with respect to $x$ when $x=2$.}
+    $$f(x)=\dfrac{x^2}{e^{-x}}$$
+    \largesp
+    \frq{Fine the rate of change of the area of a circle with respect to its diameter when its radius is \SI{10}{\centi\meter}.}
+\end{document}

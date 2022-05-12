@@ -1,0 +1,97 @@
+\documentclass{siproblemset}
+
+% SI Session Information
+\course{MTH 1321}       % the course of your SI
+\sessionnum{11}          % (optional) specify the session number
+\sessiondate{2/25/19}   % the date of the session
+
+\warmup{Concept Review}
+\topic{Inverse Trig Rules}
+\topic{Implicit Differentiation}
+\cooldown{Derivative Rule Review}
+
+% Worksheet Information
+\title{Implicit Differentiation, and \linebreak Inverse Trigonometric Rules}
+\sections{Section 3.8}
+\withnamespace
+
+\begin{document}
+    \maketitle
+    \activity{Warmup}{Concept Review}{Work \textbf{alone} then share your answers with a \textbf{partner}. Try not to use your notes.}{15 minutes}
+    
+    \mcq[2]{Find the derivatives.}{
+        \task $\dddx\left[\arcsin(x)\right]=$
+        \tinysp
+        \task $\dddx\left[\arccos(x)\right]=$
+        \task $\dddx\left[\arcsec(x)\right]=$
+        \tinysp
+        \task $\dddx\left[\arccsc(x)\right]=$
+        \task $\dddx\left[\arctan(x)\right]=$
+        \tinysp
+        \task $\dddx\left[\arccot(x)\right]=$
+    }
+
+    \frq{Find $\dddx[y]$ when $x^3+xy=2e^y+x$.}
+    
+    \pagebreak
+    \activity{Activity 1}{Computing Derivatives Using Derivative Rules}{Work in a \textbf{group of 2 or 3 people sitting near you} to answer these questions. Try not to use your notes.}{30 minutes}
+    
+    \begin{multipartquestion} % 4 inverse trig (easy, chain, chain with input, implicit)
+        Compute the following derivatives. Do not use a calculator.
+        \frq{$\dddx\left[x\arcsin(x)\right]$}
+        \Normalsp
+        \frq{$\dddx[y]\Bigr|_{x=\frac15}$ when $y=\arccos(4x)$}
+        \Normalsp
+        \frq{$\dddf{t}\left[\sec^{-1}(t^2-1)\right]$}
+        \newpage
+        \frq{$\dddx\left[\csc(x^2)\cot^{-1}(2x)\right]$}
+        \largesp
+    \end{multipartquestion}
+
+%    \begin{multipartquestion} % 4 log (easy, chain, chain with input, log_a)
+%        Compute the following derivatives. Do not use a calculator.
+%        \frq{$\dddx\left[e^x\ln(x)\right]$}
+%        \Normalsp
+%        \frq{$\dddf{t}\left[\ln\paren{t5^t}\right]$}
+%        \newpage
+%        \frq{$\dddf{t}\left[\log_3(\sin(t))\right]$}
+%        \Normalsp
+%    \end{multipartquestion}
+%
+%    \begin{multipartquestion} % 2 exp (chain, chain with input)
+%        Compute the following derivatives. Do not use a calculator.
+%        \frq{$\dddx\left[2^{2^x}\right]$}
+%        \Normalsp
+%        \frq{$\dddx[y]\Bigr|_{x=\ln(6)}$ when $y=e^{2x}$}
+%        \newpage
+%    \end{multipartquestion}
+
+    \activity{Activity 2}{Implicit Differentiation}{Work in a \textbf{group of 2 or 3 people with the same color worksheet as you} to answer these questions. Try not to use your notes.}{30 minutes}
+    
+    \frq{Find $\dddf[a]{b}$ and $\dddf[b]{a}$ when $ae^b=2ab+b^3$.}
+    \newpage
+    \frq{Find $\dddx[y]$ when $\tan(x^2y)=(x+y)^3$.}
+    \Hugesp
+    \frq{Prove that $\dddx[y]=-\dfrac{1}{x^2(\frac12y^{-1/2}-2y)}$ when $\sqrt{y}=\dfrac1x+y^2$.}
+    \newpage
+    \frq{Find an equation of the tangent line to the implicit equation at the point $(2,1)$.}
+    $$xy+x^2y^2=6$$
+    \largesp
+    
+    \activity{Cooldown}{Revew}{Test your knowledge of previous topics by answering these questions \textbf{alone}. Try not to use your notes.}{15 minutes}
+    \frq{Use the limit definition of the derivative to find $\dddf[f]{x}$ when $f(x)=\sqrt{x+3}$.}
+    \newpage
+    \mcq{Find the derivative of the following functions:}{
+        \task $g(z)=\cos(\sin(z)+z^2)$
+        \Normalsp
+        \task $f(t)=(3t)^8\cos^4(t)$
+        \Normalsp
+        \task $A(s)=\sec(4s)\tan(s^2)$
+        \Normalsp
+    }
+    \newpage
+    \frq{Look at the graphs on the board and decide which two are the position functions, which two are the velocity functions, and which two are the acceleration functions.}
+    
+    
+    
+\end{document}

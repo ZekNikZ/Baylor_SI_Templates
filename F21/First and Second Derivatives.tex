@@ -1,0 +1,54 @@
+\documentclass{siproblemset}
+\usepackage{multirow}
+
+% Worksheet Information
+\title{First and Second Derivative Cheat Sheet}
+
+\renewcommand{\arraystretch}{2}
+\newcommand*{\thead}[1]{\multicolumn{1}{c|}{\bfseries #1}}
+
+\begin{document}
+    \maketitle
+    \vspace{-1cm}
+    \begin{center}
+        \begin{tabular}{|l|l|l|}
+            \hline
+            & \thead{$f'(x)$} & \thead{$f''(x)$} \\
+            \hline
+            Tells us: &\hspace{6cm} &\hspace{6cm} \\
+            & & \\
+            \hline
+            Setting $=0$ or & & \\ DNE helps find:& & \\
+            \hline
+            Sign tells us:& $f'(x) < 0:$ &  $f''(c) < 0:$ \\
+            &  &  $f''(c) > 0:$ \\ 
+            & $f'(x) > 0:$ &  $f''(c) = 0:$ \\
+            & &($c$ is a \underline{\hspace{5cm}}) \\
+            \hline
+            Behavior tells us:&  $f'$ changes from $-$ to $+$ at $c$:  &  $f''$ changes sign at $c$: \\
+            & & \\
+            & $f'$ changes from $+$ to $-$ at $c$: &   \\
+            &  & \\
+            & ($c$ is a \underline{\hspace{5cm}})&($c$ is a \underline{\hspace{5cm}}) \\
+            \hline
+        \end{tabular}
+    
+    \vspace{0.5cm}
+    
+    \scalebox{1.25}{
+        \begin{tabular}{|c|c|c|c|c|}
+            \cline{2-3}
+             \multicolumn{1}{c|}{}& $~~f'(x)>0~~$ & $~~f'(x)<0~~$& \multicolumn{2}{c}{}\\
+            \hline
+            \multirow{2}{*}{$f''(x)<0$} & & &Concave  & \ \hspace{.3cm}$f'(x)$ is \hspace{.3cm}\ \\
+             & & & &\\
+            \hline
+            \multirow{2}{*}{$f''(x)>0$} & & & Concave& $f'(x)$ is \\
+             & & & &\\
+            \hline
+            \multicolumn{1}{c|}{} & & &  \multicolumn{2}{c}{}\\
+            \cline{2-3}
+        \end{tabular}
+    }
+    \end{center}
+\end{document}

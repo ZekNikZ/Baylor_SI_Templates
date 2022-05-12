@@ -1,0 +1,84 @@
+\documentclass{siproblemset}
+
+% SI Session Information
+\course{MTH 1321}       % the course of your SI
+\sessionnum{13}          % (optional) specify the session number
+\sessiondate{10/12/20}   % the date of the session
+
+\warmup{Concept Review}
+\topic{Derivatives of Exponential Functions}
+\topic{Derivatives of Logarithmic Functions}
+\cooldown{Implicit Tangent Lines}
+
+% Worksheet Information
+\title{Implicit Differentiation, and \linebreak Inverse Trigonometric Rules}
+\sections{Section 3.9}
+\withnamespace
+
+\begin{document}
+    \maketitle
+    \activity{Warmup}{Concept Review}{Work \textbf{alone} then share your answers with a \textbf{partner}. Try not to use your notes.}{15 minutes}
+    
+    \mcq[2]{Compute the derivative.}{
+        \task $\dddx\left[b^x\right]=$
+        \tinysp
+        \task $\dddx\left[\ln(x)\right]=$
+        \task $\dddx\left[e^x\right]=$
+        \tinysp
+        \task $\dddx\left[\log_b(x)\right]=$
+        \task $\dddx\left[e^{\pi x}\right]=$
+        \tinysp
+        \task $\dddx\left[\ln(ex)\right]=$
+    }
+
+    \mcq[2]{Simplify.}{
+        \task $\ln(e^{3x})=$
+        \tinysp
+        \task $e^{\ln(2x)}=$
+        \task $e^{g(x)\ln(f(x))}=$
+        \tinysp
+        \task $\ln(e)=$
+    }
+
+    \frq{Find $\dddx[y]$ when $x^4+\sin(xy)-2e^x+y=e$.}
+    
+    \pagebreak
+    \activity{Activity 1}{Derivatives of Exponential and Logarithmic Functions}{Work in a \textbf{group of 2 or 3 people sitting near you} to answer these questions. Try not to use your notes.}{30 minutes}
+
+    \begin{multipartquestion} % 4 log (easy, chain, chain with input, log_a)
+        Compute the following derivatives. Do not use a calculator.
+        \frq{$\dddx\left[e^x\ln(x)\right]$}
+        \normalsp
+        \frq{$\dddf{t}\left[\ln(t5^t)\right]$}
+        \normalsp
+        \frq{$\dddf{t}\left[\log_3(\sin(t))\right]$}
+        \Normalsp
+    \end{multipartquestion}
+
+    \newpage
+    \begin{multipartquestion} % 2 exp (chain, chain with input)
+        Compute the following derivatives. Do not use a calculator.
+        \frq{$\dddx\left[2^{2^x}\right]$}
+        \Normalsp
+        \frq{$\dddx\left[x\ln(e^{3x})\right]$}
+        \Normalsp
+        \frq{$\dddx[y]\Bigr|_{x=\ln(6)}$ when $y=e^{2x}$}
+        \newpage
+    \end{multipartquestion}
+
+    \activity{Activity 2}{Harder Derivatives}{Work in a \textbf{group of 2 or 3 people with the same color worksheet as you} to answer these questions. Try not to use your notes.}{30 minutes}
+    
+    \frq{Compute the derivative of $g(w)=(3w-7)^{4w}$.}
+    \Hugesp
+    \frq{Compute the derivative of $f(x)=(2x-e^{8x})^{\sin(2x)}$.}
+    \Hugesp
+    \frq{Compute the derivative of $v(t)=\paren{\sec\paren{2x}}^{\ln(x+x^2)}$.}
+    \Hugesp
+    \frq{Compute the derivative of $f(x)=(x^{1/2}+\ln x)^x$.}
+    \newpage
+    
+    \activity{Cooldown}{Implicit Tangent Lines}{Test your knowledge of previous topics by answering these questions \textbf{alone}. Try not to use your notes.}{15 minutes}
+    \frq{Find an equation of the tangent line to the implicit equation at the point $(1,2)$.}
+    $$3y^2-2x^5=10$$
+
+\end{document}

@@ -1,0 +1,67 @@
+% Introduction
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{zmathshortcuts}[2019/05/19 A collection of math shortcuts]
+
+% Derivative Symbols
+\newcommand{\dd}{\text{d}}
+\newcommand{\DD}{\partial}
+\newcommand{\ddf}[2][]{\frac{\dd#1}{\dd#2}}
+\newcommand{\DDf}[2][]{\frac{\DD#1}{\DD#2}}
+\newcommand{\dddf}[2][]{\dfrac{\dd#1}{\dd#2}}
+\newcommand{\DDdf}[2][]{\dfrac{\DD#1}{\DD#2}}
+
+% Alternate Derivative Shortcuts
+\newcommand{\der}[2][]{\frac{\text{d}#1}{\text{d}#2}}
+\newcommand{\dder}[2][]{\dfrac{\text{d}#1}{\text{d}#2}}
+\newcommand{\ddx}[1][]{\frac{\text{d}#1}{\text{d}x}}
+\newcommand{\dddx}[1][]{\dfrac{\text{d}#1}{\text{d}x}}
+
+% Trig
+\newcommand{\arcsec}{\text{arcsec}}
+\newcommand{\arccsc}{\text{arccsc}}
+\newcommand{\arccot}{\text{arccot}}
+
+% Grouping
+\newcommand{\paren}[1]{\left(#1\right)}
+\newcommand{\abs}[1]{\left\lvert#1\right\rvert}
+
+% Vector Stuff
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
+\newcommand{\magn}[1]{\lVert#1\rVert}
+\renewcommand{\vec}[1]{\mathbf{#1}}
+\renewcommand{\v}[1]{\SI{#1}{\meter/\second}}
+
+% Units
+\usepackage{siunitx}
+\newcommand{\g}[1]{\SI{#1}{\gram}}
+\newcommand{\cm}[1]{\SI{#1}{\centi\meter}}
+\newcommand{\meters}[1]{\SI{#1}{\meter}}
+\newcommand{\vp}[1]{\paren{\SI{#1}{\meter/\second}}}
+\newcommand{\gp}[1]{\paren{\SI{#1}{\gram}}}
+\newcommand{\cmp}[1]{\paren{\SI{#1}{\centi\meter}}}
+\newcommand{\metersp}[1]{\paren{\SI{#1}{\meter}}}
+\newcommand{\gravity}{\SI{9.81}{\meter/\second^2}}
+\newcommand{\gravityp}{\paren{\SI{9.81}{\meter/\second^2}}}
+\newcommand{\degC}[1]{\SI{#1}{\degreeCelsius}}
+\newcommand{\calC}[1]{\SI{#1}{cal/\degreeCelsius}}
+\newcommand{\calCp}[1]{\paren{\SI{#1}{cal/\degreeCelsius}}}
+\newcommand{\degCp}[1]{\paren{\SI{#1}{\degreeCelsius}}}
+\newcommand{\spht}[1]{\SI{#1}{cal/\gram\cdot\degreeCelsius}}
+\newcommand{\sphtp}[1]{\paren{\SI{#1}{cal/\gram\cdot\degreeCelsius}}}
+\newcommand{\unc}[1]{\delta #1}
+\newcommand{\uncp}[1]{\delta \paren{#1}}
+\newcommand{\uncas}[2]{\sqrt{\paren{\unc{#1}}^2+\paren{\unc{#2}}^2}}
+\newcommand{\uncasn}[2]{\sqrt{\paren{#1}^2+\paren{#2}^2}}
+\newcommand{\uncmd}[3]{#1\sqrt{\paren{\frac{\unc{#2}}{#2}}^2+\paren{\frac{\unc{#3}}{#3}}^2}}
+\newcommand{\uncmdn}[5]{\paren{#1}\sqrt{\paren{\frac{#3}{#2}}^2+\paren{\frac{#5}{#4}}^2}}
+\newcommand{\J}[1]{\SI{#1}{\joule}}
+\newcommand{\Jp}[1]{\paren{\SI{#1}{\joule}}}
+\newcommand{\gtokg}{\paren{\frac{\SI{1}{\kilo\gram}}{\g{1000}}}}
+\newcommand{\V}[1]{\SI{#1}{\volt}}
+\newcommand{\Vp}[1]{\paren{\SI{#1}{\volt}}}
+\newcommand{\A}[1]{\SI{#1}{\ampere}}
+\newcommand{\Ap}[1]{\paren{\SI{#1}{\ampere}}}
+\newcommand{\Ohm}[1]{\SI{#1}{\ohm}}
+\newcommand{\Ohmp}[1]{\paren{\SI{#1}{\ohm}}}
+\newcommand{\mm}[1]{\SI{#1}{\milli\meter}}
+\newcommand{\mmp}[1]{\paren{\SI{#1}{\milli\meter}}}

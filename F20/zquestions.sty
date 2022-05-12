@@ -1,0 +1,157 @@
+% Introduction
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{zquestions}[2019/05/19 A collection of commands to generate different types of questions]
+
+% Load required packages
+\RequirePackage{tasks}
+\RequirePackage{xargs}
+
+% Deprecation
+\DeclareRobustCommand{\deprecate}[2]{%
+    % #1 is the deprecated command
+    % #2 is the new command to use
+    % Issue a message at first usage
+    \PackageWarning{zquestions}{%
+        Deprecated command \@backslashchar#1;\MessageBreak
+        \protect#2\space should be used instead\MessageBreak
+    }
+    % globally redefine "\#1" to "\deprecate@#1"
+    \global\expandafter\let\csname#1\expandafter\endcsname
+    \csname deprecated@#1\endcsname
+    % issue the old command
+    \csname#1\endcsname
+}
+
+\newcommand{\@deprecate}[2]{%
+    \expandafter\let\csname deprecated@#1\expandafter\endcsname\csname#1\endcsname
+    \@namedef{#1}{\deprecate{#1}{#2}}%
+}
+
+% Questions
+\newcounter{zquestion}
+\newcounter{zsubquestion}
+
+\newcommand{\frq}[2][\thezsubquestion]{}
+\newcommand{\tfq}[2][\thezsubquestion]{}
+\newcommandx{\mcq}[4][1=1,2=\thezsubquestion]{}
+
+\newcommand{\usequestions}{%
+    \renewcommand{\frq}[2][\thezquestion]{%
+        \begin{enumerate}%
+            \setcounter{enumi}{##1}%
+            \item ##2%
+        \end{enumerate}%
+        \stepcounter{zquestion}%
+    }%
+    \renewcommand{\tfq}[2][\thezquestion]{%
+        \begin{enumerate}%
+            \setcounter{enumi}{##1}%
+            \item ##2%
+            
+            \textit{Circle one:} TRUE or FALSE
+        \end{enumerate}%
+        \stepcounter{zquestion}%
+    }%
+    \renewcommandx{\mcq}[4][1=1,2=\thezquestion]{%
+        \begin{enumerate}%
+            \setcounter{enumi}{##2}%
+            \item ##3%
+            
+            \begin{tasks}(##1)%
+                ##4
+            \end{tasks}
+        \end{enumerate}%
+        \stepcounter{zquestion}%
+    }%
+}
+
+\newcommand{\usesubquestions}{%
+    \setcounter{zsubquestion}{0}
+    \renewcommand{\frq}[2][\thezsubquestion]{%
+        \begin{enumerate}%
+            \setcounter{enumii}{##1}%
+            \item ##2%
+        \end{enumerate}%
+        \stepcounter{zsubquestion}% 
+    }%
+    \renewcommand{\tfq}[2][\thezsubquestion]{%
+        \begin{enumerate}%
+            \setcounter{enumii}{##1}%
+            \item ##2%
+            
+            \textit{Circle one:} TRUE or FALSE
+        \end{enumerate}%
+        \stepcounter{zsubquestion}%
+    }%
+    \def\choice{\task}
+    \renewcommandx{\mcq}[4][1=1,2=\thezsubquestion]{%
+        \begin{enumerate}%
+            \setcounter{enumii}{##2}%
+            \item ##3%
+            
+            \begin{tasks}(##1)
+                ##4
+            \end{tasks}
+        \end{enumerate}%
+        \stepcounter{zsubquestion}%
+    }%
+}
+
+\usequestions
+
+% Counters
+\newcommand{\changequestionnumber}[1]{\setcounter{zquestion}{#1}}
+\newcommand{\changesubquestionnumber}[1]{\setcounter{zsubquestion{#1}}}
+
+% Multi-part Question
+\newenvironment{multipartquestion}[1][\thezquestion]{%
+    \usesubquestions%
+    \begin{enumerate}%
+        \setcounter{enumi}{#1}%
+        \item 
+}{\end{enumerate}\stepcounter{zquestion}\usequestions}
+
+% Spacing
+% command cm
+% tiny    1
+% Tiny    2
+% small   3
+% Small   4
+% normal  5
+% Normal  6
+% large   7
+% Large   8
+% huge    9
+% Huge    10
+\newcommand{\tinysp}{\vspace{1cm}}
+\newcommand{\Tinysp}{\vspace{2cm}}
+\newcommand{\smallsp}{\vspace{3cm}}
+\newcommand{\Smallsp}{\vspace{4cm}}
+\newcommand{\normalsp}{\vspace{5cm}}
+\newcommand{\Normalsp}{\vspace{6cm}}
+\newcommand{\largesp}{\vspace{7cm}}
+\newcommand{\Largesp}{\vspace{8cm}}
+\newcommand{\hugesp}{\vspace{9cm}}
+\newcommand{\Hugesp}{\vspace{10cm}}
+
+% Sections
+\newcommand{\activity}[4]{%
+    \hspace{-0.25in}\underline{\textbf{#1:} #2}
+    
+    \hspace{-0.25in}{\textit{#3 (#4)}}
+    \setcounter{zquestion}{0}
+}
+
+% Deprecated commands
+\newcommand{\nospace}{\vspace{1cm}}
+\newcommand{\tinyspace}{\vspace{2cm}}
+\newcommand{\smallspace}{\vspace{4cm}}
+\newcommand{\mediumspace}{\vspace{6cm}}
+\newcommand{\largespace}{\vspace{8cm}}
+\newcommand{\hugespace}{\vspace{10cm}}
+\@deprecate{nospace}{\tinysp}
+\@deprecate{tinyspace}{\Tinysp}
+\@deprecate{smallspace}{\Smallsp}
+\@deprecate{mediumspace}{\Normalsp}
+\@deprecate{largespace}{\Largesp}
+\@deprecate{hugespace}{\Hugesp}

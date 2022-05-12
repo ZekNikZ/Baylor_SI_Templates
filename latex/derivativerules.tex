@@ -1,0 +1,88 @@
+\documentclass{siproblemset}
+
+% Worksheet Information
+\title{Table of Derivative Rules}
+
+\DeclareMathOperator{\arcsec}{arcsec}
+\DeclareMathOperator{\arccot}{arccot}
+\DeclareMathOperator{\arccsc}{arccsc}
+
+\renewcommand{\arraystretch}{2.5}
+
+\begin{document}
+    \maketitle
+    \setcounter{section}{-1}
+    \section{Chain Rule}
+    \begin{tabular}{c c c}
+        $\left[f(g(x))\right]'=f'(g(x))g'(x)$ \hspace{2cm} & 
+        $\left[f(u)\right]'=f'(u)u'$ \hspace{2cm}  &
+        $\dddx[f]=\dddf[f]{u}\dddx[u]$ \hspace{2cm} 
+    \end{tabular}
+    
+    \section{Basic Derivative Rules}
+    \begin{tabular}{|c c c c|}
+        \hline
+        Name & Lagrange Notation & Leibniz Notation & Chain Rule Form \\
+        \hline
+        Constant & $[c]'=0$ & $\dddx\left[c\right]=0$ &\\
+        \hline
+        Variable & $[x]'=1$ & $\dddx\left[x\right]=1$ &\\
+        Power & $[x^n]'=nx^{n-1}$ & $\dddx\left[x^n\right]=nx^{n-1}$ & $[u^n]'=u^{n-1}u'$ \\
+        \hline
+        Constant Multiple & $[cf]'=c[f]'$ & $\dddx\left[cf(x)\right]=c\dddx\left[f(x)\right]$ &\\
+        \hline
+        Sum/Difference & $[f\pm g]'=f'\pm g'$ & $\dddx\left[f(x)\pm g(x)\right]=\dddx[f]\pm\dddx[g]$ &\\
+        \hline
+        Product & $[f\cdot g]'=f'g+fg'$ & $\dddx\left[f(x)g(x)\right]=g\dddx[f]+f\dddx[g]$ &\\
+        \hline
+        Quotient & $\left[\dfrac fg\right]'=\dfrac{gf'-fg'}{g^2}$ & $\dddx\left[\dfrac {f(x)}{g(x)}\right]=\dfrac{g\ddx[f]-f\ddx[g]}{g^2}$ &\\
+        \hline
+        Exponential & $\left[e^x\right]'=e^x$ & $\dddx\left[e^x\right]=e^x$ & $\left[e^u\right]=e^uu'$ \\
+        \hline
+    \end{tabular}
+
+    \section{Exponential Derivative Rules}
+    \begin{tabular}{|c c c c|}
+        \hline
+        Name & Lagrange Notation & Leibniz Notation & Chain Rule Form \\
+        \hline
+        Exponential & $\left[e^x\right]'=e^x$ & $\dddx\left[e^x\right]=e^x$ & $\left[e^u\right]=e^uu'$ \\
+        General Exponential & $\left[a^x\right]'=a^x\ln(a)$ & $\dddx\left[a^x\right]=a^x\ln(a)$ & $\left[a^u\right]=a^u\ln(a)u'$ \\
+        \hline
+        Natural Logarithm & $\left[\ln(x)\right]'=\dfrac1x$ & $\dddx\left[\ln(x)\right]=\dfrac1x$ & $\left[\ln(u)\right]=\dfrac{u'}{u}$ \\
+        General Logarithm & $\left[\log_b(x)\right]'=\dfrac{1}{x\ln(b)}$ & $\dddx\left[\log_b(x)\right]=\dfrac{1}{x\ln(b)}$ & $\left[\log_b(u)\right]=\dfrac{u'}{u\ln(b)}$ \\
+        \hline
+    \end{tabular}
+
+    \section{Trigonometric Derivative Rules}
+    \begin{tabular}{|c c c c|}
+        \hline
+        Function & Lagrange Notation & Leibniz Notation & Chain Rule Form \\
+        \hline
+        $\sin (x)$ & $[\sin (x)]'=\cos(x)$ & $\dddx\left[\sin (x)\right]=\cos (x)$ & $[\sin (u)]'=\cos(u)u'$ \\
+        $\cos(x)$ & $[\cos (x)]'=-\sin (x)$ & $\dddx\left[\cos (x)\right]=-\sin (x)$ & $[\cos (u)]'=-\sin(u)u'$ \\
+        \hline
+        $\sec(x)$ & $[\sec(x)]'=\sec(x)\tan(x)$ & $\dddx\left[\sec(x)\right]=\sec(x)\tan(x)$ & $[\sec(u)]'=\sec(u)\tan(u)u'$ \\
+        $\csc(x)$ & $[\csc(x)]'=-\csc(x)\cot(x)$ & $\dddx\left[\csc(x)\right]=-\csc(x)\cot(x)$ & $[\csc(u)]'=-\csc(u)\cot(u)u'$ \\
+        \hline
+        $\tan(x)$ & $[\tan(x)]'=\sec^2(x)$ & $\dddx\left[\tan(x)\right]=\sec^2(x)$ & $[\tan(u)]'=\sec^2(u)u'$ \\
+        $\cot(x)$ & $[\cot(x)]'=-\csc^2(x)$ & $\dddx\left[\cot(x)\right]=-\csc^2(x)$ & $[\cot(u)]'=-\csc^2(u)u'$ \\
+        \hline
+    \end{tabular}
+
+    \section{Inverse Trigonometric Derivative Rules}
+    \begin{tabular}{|c c c c|}
+        \hline
+        Function & Lagrange Notation & Leibniz Notation & Chain Rule Form \\
+        \hline
+        $\arcsin(x)$ & $[\arcsin (x)]'=\dfrac{1}{\sqrt{1-x^2}}$ & $\dddx\left[\arcsin(x)\right]=\dfrac{1}{\sqrt{1-x^2}}$ & $[\arcsin(u)]'=\dfrac{u'}{\sqrt{1-u^2}}$ \\
+        $\arccos(x)$ & $[\arccos(x)]'=-\dfrac{1}{\sqrt{1-x^2}}$ & $\dddx\left[\arccos(x)\right]=-\dfrac{1}{\sqrt{1-x^2}}$ & $[\arccos(u)]'=-\dfrac{u'}{\sqrt{1-u^2}}$ \\
+        \hline
+        $\arcsec(x)$ & $[\arcsec (x)]'=\dfrac{1}{|x|\sqrt{x^2-1}}$ & $\dddx\left[\arcsec(x)\right]=\dfrac{1}{|x|\sqrt{x^2-1}}$ & $[\arcsec(u)]'=\dfrac{u'}{|u|\sqrt{u^2-1}}$ \\
+        $\arccsc(x)$ & $[\arccsc (x)]'=-\dfrac{1}{|x|\sqrt{x^2-1}}$ & $\dddx\left[\arccsc(x)\right]=-\dfrac{1}{|x|\sqrt{x^2-1}}$ & $[\arccsc(u)]'=-\dfrac{u'}{|u|\sqrt{u^2-1}}$ \\
+        \hline
+        $\arctan(x)$ & $[\arctan (x)]'=\dfrac{1}{1+x^2}$ & $\dddx\left[\arctan(x)\right]=\dfrac{1}{1+x^2}$ & $[\arctan(u)]'=\dfrac{u'}{1+u^2}$ \\
+        $\arccot(x)$ & $[\arccot (x)]'=-\dfrac{1}{1+x^2}$ & $\dddx\left[\arccot(x)\right]=-\dfrac{1}{1+x^2}$ & $[\arccot(u)]'=-\dfrac{u'}{1+u^2}$ \\
+        \hline
+    \end{tabular}
+\end{document}

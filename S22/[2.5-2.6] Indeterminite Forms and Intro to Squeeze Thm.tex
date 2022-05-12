@@ -1,0 +1,86 @@
+\documentclass{siproblemset}
+
+\usepackage{multicol}
+\usepackage{xcolor}
+
+% SI Session Information
+\course{MTH 1321}
+\sessionnum{4}
+\sessiondate{2/2/21}
+
+\warmup{Concept Review}
+\topic{Indeterminate Forms}
+\topic{More Difficult Indeterminate Forms}
+\cooldown{Introduction to the Squeeze Theorem}
+
+% Worksheet Information
+\title{Indeterminate Forms,\linebreak Introduction to the Squeeze Thm.}
+\sections{Section 2.5-2.6a}
+\withnamespace
+
+\begin{document}
+    \maketitle
+    
+    \activity{Warmup}{Concept Review and Overview}{Try these problems \textbf{alone} as your peers join the session. Do your best to not refer to your notes.}{15 minutes}
+
+    \frq{What are the three main techniques for dealing with indeterminate forms?}
+    \Smallsp
+    
+    
+    \mcq[2]{Give the values of the following limits.}{
+        \task $\lim\limits_{u\to 0}\dfrac{\sin u}{u}=$
+        \task $\lim\limits_{u\to 0}\dfrac{1-\cos u}{ u}=$
+    }
+    
+    \frq{What is the Squeeze Theorem?}
+    \Smallsp 
+    
+    
+    \frq{Use the Squeeze Theorem to determine the value of the limit $\lim\limits_{x\to0}x^3\cos\paren{\dfrac1x}$ }
+    
+    \pagebreak
+    
+    \activity{Activity 1}{Limits of Continuous Functions and Indeterminate Forms}{Work together in your \textbf{breakout rooms} to answer these questions. Do your best to not refer to your notes while working on these problems.}{30 minutes}
+    \begin{multipartquestion}
+        Evaluate the following limits. If an indeterminate form is found, state the form and use algebra to solve the limit. If you have extra time, then if the limit does not exist, determine whether the one-sided limits exist (finite or infinite).
+        \frq{$\lim\limits_{t\rightarrow4}\dfrac{\sqrt{5-t}-1}{2-\sqrt{t}}$}
+        \Smallsp
+        \frq{$\lim\limits_{h\rightarrow0}\dfrac{\dfrac{1}{(h+2)^2}-\dfrac14}{h}$}
+        \Smallsp
+        \frq{$\lim\limits_{a\rightarrow\frac{\pi}3}\dfrac{2\cos^2a+3\cos a-2}{2\cos a-1}$}
+        \Smallsp
+        \frq{$\lim\limits_{z\rightarrow8}\dfrac{z^3-64z}{z-8}$}
+        \Smallsp
+    \end{multipartquestion}
+
+    \pagebreak
+        
+    \activity{Activity 2}{Trig Limits}{Work together in your \textbf{breakout rooms} to answer these questions. Do your best to not refer to your notes while working on these problems.}{30 minutes}
+    
+    \frq{Evaluate the limit: $\lim\limits_{t\to0}\dfrac{t}{\sin(4t)}$}
+    \Normalsp
+    \frq{Evaluate the limit: $\lim\limits_{\theta\to0}\dfrac{\sin^2(\theta)-2+\cos(2\theta)+\cos^2(\theta)}{\theta}$}
+    \Normalsp
+    
+    \frq{Evaluate the limit: $\lim\limits_{t\to0}\dfrac{\sin(\pi t)}{3t}$}
+    \Normalsp
+    \frq{Evaluate the limit: $\lim\limits_{x\to0}x\cot x$}
+    \Normalsp
+    \frq{Evaluate the limit: $\lim\limits_{x\to1}x\csc x$}
+    \Normalsp
+    
+    \pagebreak
+    \activity{Cooldown}{Squeeze Theorem}{Try this problem \textbf{alone}. Do your best to not refer to your notes.}{15 minutes}
+    \frq{Use the Squeeze Theorem to evaluate the following limit.}
+    $$\lim\limits_{x\to2}(x-2)\cos^2\left(\dfrac{2x}{4-2x}\right)$$
+    \hugesp
+    \mcq{State whether the inequality provides enough information to determine $\lim\limits_{x\to1}f(x)$. If so, find the limit.}{
+        \task $\dfrac{1}{x}\leq f(x) \leq -\cos(\pi x)$
+        \Tinysp
+        \task $x^2\leq f(x) \leq e^x$
+        \Tinysp
+        \task $\sqrt{x+3}\leq f(x) \leq \log_2(4x)$
+        \Tinysp
+    }
+        
+\end{document}
